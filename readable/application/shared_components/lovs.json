@@ -1,0 +1,384 @@
+[
+  {
+    "id":"44706205074573137013"
+   ,"Identification":{
+      "Name":"DATA_LOAD_OPTION"
+    }
+   ,"Source":{
+      "Location":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44706205391970137011"
+       ,"Entry":{
+          "Sequence":10
+         ,"Display":"Arquivo obtido por upload, separado por v\u00EDrgulas (*.csv) ou delimitado por tabula\u00E7\u00F5es"
+         ,"Return":"UPLOAD"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44706213659966136996"
+   ,"Identification":{
+      "Name":"DATE_FORMAT_OPT"
+    }
+   ,"Source":{
+      "Location":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44706214078696136995"
+       ,"Entry":{
+          "Sequence":10
+         ,"Display":"Usar m\u00E1scaras de formato padr\u00E3o do aplicativo"
+         ,"Return":"Y"
+        }
+      }
+     ,{
+        "id":"44706214394742136995"
+       ,"Entry":{
+          "Sequence":20
+         ,"Display":"Fornecer formatos personalizados para colunas submetidas a upload"
+         ,"Return":"N"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44706215679584136993"
+   ,"Identification":{
+      "Name":"DATA_LOAD_CHARSET"
+    }
+   ,"Source":{
+      "Location":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44706216052519136992"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Unicode UTF-16 Little Endian"
+         ,"Return":"utf-16le"
+        }
+      }
+     ,{
+        "id":"44706216407714136992"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Unicode UTF-16 Big Endian"
+         ,"Return":"utf-16be"
+        }
+      }
+     ,{
+        "id":"44706216886843136992"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"US-ASCII"
+         ,"Return":"us-ascii"
+        }
+      }
+     ,{
+        "id":"44706217257352136992"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-6 - \u00C1rabe"
+         ,"Return":"iso-8859-6"
+        }
+      }
+     ,{
+        "id":"44706217598963136992"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1256 - \u00C1rabe"
+         ,"Return":"windows-1256"
+        }
+      }
+     ,{
+        "id":"44706218023868136992"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Big5 - Chin\u00EAs"
+         ,"Return":"big5"
+        }
+      }
+     ,{
+        "id":"44706218424557136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"GBK - Chin\u00EAs"
+         ,"Return":"gbk"
+        }
+      }
+     ,{
+        "id":"44706218828944136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-5 - Cir\u00EDlico"
+         ,"Return":"iso-8859-5"
+        }
+      }
+     ,{
+        "id":"44706219224325136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"KOI8-R - Cir\u00EDlico"
+         ,"Return":"koi8-r"
+        }
+      }
+     ,{
+        "id":"44706219596579136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"KOI8-U - Cir\u00EDlico"
+         ,"Return":"koi8-u"
+        }
+      }
+     ,{
+        "id":"44706220068167136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1251 - Cir\u00EDlico"
+         ,"Return":"windows-1251"
+        }
+      }
+     ,{
+        "id":"44706220484603136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-2 - Europa Oriental"
+         ,"Return":"iso-8859-2"
+        }
+      }
+     ,{
+        "id":"44706220813555136991"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1250 - Europa Oriental"
+         ,"Return":"windows-1250"
+        }
+      }
+     ,{
+        "id":"44706221193612136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-7 - Grego"
+         ,"Return":"iso-8859-7"
+        }
+      }
+     ,{
+        "id":"44706221618468136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1253 - Grego"
+         ,"Return":"windows-1253"
+        }
+      }
+     ,{
+        "id":"44706222072003136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-8-i - Hebraico"
+         ,"Return":"iso-8859-8-i"
+        }
+      }
+     ,{
+        "id":"44706222483678136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1255 - Hebraico"
+         ,"Return":"windows-1255"
+        }
+      }
+     ,{
+        "id":"44706222882562136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"EUC - Japon\u00EAs"
+         ,"Return":"euc-jp"
+        }
+      }
+     ,{
+        "id":"44706223217590136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Shift JIS - Japon\u00EAs"
+         ,"Return":"shift_jis"
+        }
+      }
+     ,{
+        "id":"44706223610790136990"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"EUC - Coreano"
+         ,"Return":"euc-kr"
+        }
+      }
+     ,{
+        "id":"44706224021145136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-4 - Norte da Europa"
+         ,"Return":"iso-8859-4"
+        }
+      }
+     ,{
+        "id":"44706224402242136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1257 - Norte da Europa"
+         ,"Return":"windows-1257"
+        }
+      }
+     ,{
+        "id":"44706224819112136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-3 - Sul da Europa"
+         ,"Return":"iso-8859-3"
+        }
+      }
+     ,{
+        "id":"44706225252466136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"TIS-620 - Tailand\u00EAs"
+         ,"Return":"tis-620"
+        }
+      }
+     ,{
+        "id":"44706225597009136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-9 - Turco"
+         ,"Return":"iso-8859-9"
+        }
+      }
+     ,{
+        "id":"44706226082088136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1254 - Turco"
+         ,"Return":"windows-1254"
+        }
+      }
+     ,{
+        "id":"44706226394787136989"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Unicode UTF-8"
+         ,"Return":"utf-8"
+        }
+      }
+     ,{
+        "id":"44706226839259136988"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1258 - Vietnamita"
+         ,"Return":"windows-1258"
+        }
+      }
+     ,{
+        "id":"44706227231762136988"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"ISO-8859-1 - Europa Ocidental"
+         ,"Return":"iso-8859-1"
+        }
+      }
+     ,{
+        "id":"44706227595214136988"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Windows 1252 - Europa Ocidental"
+         ,"Return":"windows-1252"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44719081535243283708"
+   ,"Identification":{
+      "Name":"TIMEFRAME (4 WEEKS)"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Legacy SQL Query"
+     ,"SQL Query":"select disp,\n      val as seconds\n from table( apex_util.get_timeframe_lov_data )\norder by insert_order"
+    }
+  }
+ ,{
+    "id":"44719117008676283662"
+   ,"Identification":{
+      "Name":"VIEW_AS_REPORT_CHART"
+    }
+   ,"Source":{
+      "Location":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44719117292150283662"
+       ,"Entry":{
+          "Sequence":1
+         ,"Display":"Adicionar P\u00E1gina do Relat\u00F3rio"
+         ,"Return":"REPORT"
+        }
+       ,"Globalization":{
+          "Template":"\u003Cspan class=\"fa fa-table\" aria-hidden=\"true\"\u003E\u003C\/span\u003E\u003Cspan class=\"u-VisuallyHidden\"\u003E#DISPLAY_VALUE#\u003C\/span\u003E"
+        }
+      }
+     ,{
+        "id":"44719117658069283658"
+       ,"Entry":{
+          "Sequence":2
+         ,"Display":"Adicionar P\u00E1gina do Gr\u00E1fico"
+         ,"Return":"CHART"
+        }
+       ,"Globalization":{
+          "Template":"\u003Cspan class=\"fa fa-pie-chart\" aria-hidden=\"true\"\u003E\u003C\/span\u003E\u003Cspan class=\"u-VisuallyHidden\"\u003E#DISPLAY_VALUE#\u003C\/span\u003E"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"52084124667282434256"
+   ,"Identification":{
+      "Name":"LOGIN_REMEMBER_USERNAME"
+    }
+   ,"Source":{
+      "Location":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"52084125030287434254"
+       ,"Entry":{
+          "Sequence":10
+         ,"Display":"Lembrar nome do usu\u00E1rio"
+         ,"Return":"Y"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"52128259155450321530"
+   ,"Identification":{
+      "Name":"SITUACAO_PROCESSO"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Legacy SQL Query"
+     ,"SQL Query":"SELECT NOME AS D\n      ,COD AS RETURN\nfrom TCU.VW_APEX_SITUACAO_PROCESSO\nORDER BY COD ASC"
+    }
+  }
+ ,{
+    "id":"52128276068257143020"
+   ,"Identification":{
+      "Name":"COMPLEMENTO_ASSUNTO"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Legacy SQL Query"
+     ,"SQL Query":"SELECT TEXTO_COMPLEMENTO_ASSUNTO as d\n       ,COD as r\nfrom TCU.VW_APEX_LOTE\nORDER BY COD ASC"
+    }
+  }
+]

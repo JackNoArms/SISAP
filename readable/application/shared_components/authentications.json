@@ -1,0 +1,18 @@
+[
+  {
+    "id":"52083996212168434486"
+   ,"Identification":{
+      "Name":"Autentica\u00E7\u00E3o do Application Express"
+    }
+   ,"Settings":{
+      "Type":"No Authentication"
+     ,"Username":"nobody"
+    }
+   ,"Login Processing":{
+      "Switch in Session":false
+    }
+   ,"Real Application Security":{
+      "RAS Mode":"Disabled"
+    }
+  }
+]

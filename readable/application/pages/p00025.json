@@ -1,0 +1,1280 @@
+{
+  "id":"25"
+ ,"Identification":{
+    "Name":"Gr\u00E1fico Macrotema\/Tema"
+   ,"Title":"Gr\u00E1fico Macrotema\/Tema"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"44716904855779130503"
+     ,"Identification":{
+        "Title":"Governan\u00E7a e Gest\u00E3o"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT TE.TEMA AS \"Governan\u00E7a e Gest\u00E3o\", COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%GG-%\u0027\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n\n\n\n\n"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"Tabela Din\u00E2mica (44716906183048130516)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (52084067387119434388)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+          ]
+         ,"Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"44716905104354130506"
+         ,"Identification":{
+            "Column Name":"Contagem de Processo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Contagem De Processo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"44716905635108130511"
+         ,"Identification":{
+            "Column Name":"Governan\u00E7a e Gest\u00E3o"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Governan\u00E7a E Gest\u00E3o"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44716905370035130508"
+     ,"Identification":{
+        "Title":"Desenvolvimento e Consolida\u00E7\u00E3o"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT TE.TEMA AS \"Desenvolvimento e Consolida\u00E7\u00E3o\", COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%DC-%\u0027\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"Tabela Din\u00E2mica (44716906183048130516)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (52084067387119434388)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+          ]
+         ,"Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"44716905477900130509"
+         ,"Identification":{
+            "Column Name":"Contagem de Processo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Contagem De Processo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"44716966132569731694"
+         ,"Identification":{
+            "Column Name":"Desenvolvimento e Consolida\u00E7\u00E3o"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Desenvolvimento E Consolida\u00E7\u00E3o"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44716906183048130516"
+     ,"Identification":{
+        "Title":"Tabela Din\u00E2mica"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Tabs Container (52084049936845434407)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TabsRegion-mod--simple"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"44716907298777130528"
+     ,"Identification":{
+        "Title":"Outros"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT TE.TEMA AS \"Outros\", COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%Ou-%\u0027\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n\n\n\n\n"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Parent Region":"Tabela Din\u00E2mica (44716906183048130516)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (52084067387119434388)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+          ]
+         ,"Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"44716907403336130529"
+         ,"Identification":{
+            "Column Name":"Contagem de Processo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Contagem De Processo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"44716907595630130531"
+         ,"Identification":{
+            "Column Name":"Outros"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Outros"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44716907689635130532"
+     ,"Identification":{
+        "Title":"Regulariza\u00E7\u00E3o Fundi\u00E1ria"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT TE.TEMA AS \"Regulariza\u00E7\u00E3o Fundi\u00E1ria\", COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%RF-%\u0027\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"Tabela Din\u00E2mica (44716906183048130516)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (52084067387119434388)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+          ]
+         ,"Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"44716907843674130533"
+         ,"Identification":{
+            "Column Name":"Contagem de Processo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Contagem De Processo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"44716908079683130535"
+         ,"Identification":{
+            "Column Name":"Regulariza\u00E7\u00E3o Fundi\u00E1ria"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Regulariza\u00E7\u00E3o Fundi\u00E1ria"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44716908169578130536"
+     ,"Identification":{
+        "Title":"Sob sigilo"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT TE.TEMA AS \"Sob sigilo\", COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%Sob sigilo%\u0027\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n\n"
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Parent Region":"Tabela Din\u00E2mica (44716906183048130516)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (52084067387119434388)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+          ]
+         ,"Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"44716908246023130537"
+         ,"Identification":{
+            "Column Name":"Contagem de Processo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Contagem De Processo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"44716965670794731689"
+         ,"Identification":{
+            "Column Name":"Sob sigilo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Sob Sigilo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44716965811032731691"
+     ,"Identification":{
+        "Title":"Acesso \u00E0 Terra"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT TE.TEMA AS \"Acesso \u00E0 terra\", COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%AT-%\u0027\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n\n\n"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"Tabela Din\u00E2mica (44716906183048130516)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (52084067387119434388)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+          ]
+         ,"Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"44716965948996731692"
+         ,"Identification":{
+            "Column Name":"Contagem de Processo"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Contagem De Processo"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"44716966048724731693"
+         ,"Identification":{
+            "Column Name":"Acesso \u00E0 terra"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Acesso \u00C0 Terra"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"44716966231151731695"
+     ,"Identification":{
+        "Name":"P25_TOTAL"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Total"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Desenvolvimento e Consolida\u00E7\u00E3o (44716905370035130508)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COUNT(ST.TEMA) AS \"Total\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%DC-%\u0027"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44716966293655731696"
+     ,"Identification":{
+        "Name":"P25_TOTAL_1"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Total"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Acesso \u00E0 Terra (44716965811032731691)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COUNT(ST.TEMA) AS \"Total\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%AT-%\u0027"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44716966430134731697"
+     ,"Identification":{
+        "Name":"P25_TOTAL_1_1"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Total"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Governan\u00E7a e Gest\u00E3o (44716904855779130503)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COUNT(ST.TEMA) AS \"Total\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%GG-%\u0027"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44716966511348731698"
+     ,"Identification":{
+        "Name":"P25_TOTAL_1_1_1"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Total"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Outros (44716907298777130528)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COUNT(ST.TEMA) AS \"Total\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%Ou-%\u0027"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44716966635933731699"
+     ,"Identification":{
+        "Name":"P25_TOTAL_1_1_1_1"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Total"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Regulariza\u00E7\u00E3o Fundi\u00E1ria (44716907689635130532)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COUNT(ST.TEMA) AS \"Total\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%RF-%\u0027"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44716966708057731700"
+     ,"Identification":{
+        "Name":"P25_TOTAL_1_1_1_1_1"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Total"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Sob sigilo (44716908169578130536)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL AND TE.TEMA LIKE \u0027%Sob sigilo%\u0027"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+}

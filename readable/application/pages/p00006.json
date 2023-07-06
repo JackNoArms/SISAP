@@ -1,0 +1,737 @@
+{
+  "id":"6"
+ ,"Identification":{
+    "Name":"Estat\u00EDsticas"
+   ,"Title":"Estat\u00EDsticas"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"44703796816249675530"
+     ,"Identification":{
+        "Title":"Ano"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Gr\u00E1ficos (44703878014287372903)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44703796922468675531"
+       ,"Chart":{
+          "Type":"Bar"
+        }
+       ,"Appearance":{
+          "Orientation":"Vertical"
+         ,"Stack":false
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":false
+        }
+       ,"Multi-Series Chart Data":{
+          "Fill Gaps in Chart Data":true
+         ,"Sort Order":"Label - Ascending"
+         ,"Render Gap as Zero":true
+        }
+       ,"Settings":{
+          "Zoom and Scroll":"No"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Group Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":false
+        }
+       ,"Series":[
+          {
+            "id":"44703796993380675532"
+           ,"Identification":{
+              "Name":"Ano"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT ANO, COUNT(ANO)\nFROM SISAP_ACERVO\ngroup by ano\norder by ano asc\n"
+            }
+           ,"Column Mapping":{
+              "Label":"ANO"
+             ,"Value":"COUNT(ANO)"
+            }
+           ,"Appearance":{
+              "Assigned To Y2 Axis":false
+            }
+           ,"Label":{
+              "Show":false
+            }
+          }
+        ]
+       ,"Axes":[
+          {
+            "id":"44703797128533675533"
+           ,"Identification":{
+              "Name":"x"
+             ,"Show Axis":true
+            }
+           ,"Value":{
+              "Format":"Decimal"
+             ,"Decimal Places":0
+             ,"Format Scaling":"Automatic"
+             ,"Baseline Scaling":"Zero"
+             ,"Scale":"Linear"
+            }
+           ,"Major Ticks":{
+              "Show":"Yes"
+            }
+           ,"Minor Ticks":{
+              "Show":false
+            }
+           ,"Tick Label":{
+              "Show":true
+             ,"Rotation":true
+             ,"Position":"Outside"
+            }
+          }
+         ,{
+            "id":"44703797229224675534"
+           ,"Identification":{
+              "Name":"y"
+             ,"Show Axis":true
+            }
+           ,"Value":{
+              "Format":"Decimal"
+             ,"Decimal Places":0
+             ,"Format Scaling":"Automatic"
+             ,"Baseline Scaling":"Zero"
+             ,"Scale":"Linear"
+            }
+           ,"Appearance":{
+              "Position":"Automatic"
+            }
+           ,"Major Ticks":{
+              "Show":"Yes"
+            }
+           ,"Minor Ticks":{
+              "Show":false
+            }
+           ,"Tick Label":{
+              "Show":true
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"44703876787842372890"
+     ,"Identification":{
+        "Title":"Relator"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"Gr\u00E1ficos (44703878014287372903)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44703876856152372891"
+       ,"Chart":{
+          "Type":"Pie"
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":false
+        }
+       ,"Settings":{
+          "Pie Selection Effect":"Highlight"
+        }
+       ,"Value":{
+          "Pie Chart Other Threshold":0
+         ,"Format":"Decimal"
+         ,"Decimal Places":0
+         ,"Format Scaling":"Automatic"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":true
+         ,"Position":"Automatic"
+         ,"Hide and Show Behavior":"None"
+        }
+       ,"Series":[
+          {
+            "id":"44703876975524372892"
+           ,"Identification":{
+              "Name":"Relator"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT RELATOR, COUNT(RELATOR)\nFROM SISAP_ACERVO\ngroup by RELATOR\norder by RELATOR asc\n"
+            }
+           ,"Column Mapping":{
+              "Label":"RELATOR"
+             ,"Value":"COUNT(RELATOR)"
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Automatic"
+             ,"Display As":"Label - Percentage ( Value )"
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"44703877272353372895"
+     ,"Identification":{
+        "Title":"UT"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"Gr\u00E1ficos (44703878014287372903)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44703877305528372896"
+       ,"Chart":{
+          "Type":"Pie"
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":false
+        }
+       ,"Settings":{
+          "Pie Selection Effect":"Highlight"
+        }
+       ,"Value":{
+          "Pie Chart Other Threshold":0
+         ,"Format":"Decimal"
+         ,"Decimal Places":0
+         ,"Format Scaling":"Automatic"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":true
+         ,"Position":"Automatic"
+         ,"Hide and Show Behavior":"None"
+        }
+       ,"Series":[
+          {
+            "id":"44703877475713372897"
+           ,"Identification":{
+              "Name":"UT"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT UT, COUNT(UT)\nFROM SISAP_ACERVO\ngroup by UT\norder by UT asc\n"
+            }
+           ,"Column Mapping":{
+              "Label":"UT"
+             ,"Value":"COUNT(UT)"
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Automatic"
+             ,"Display As":"Label - Percentage ( Value )"
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"44703878014287372903"
+     ,"Identification":{
+        "Title":"Gr\u00E1ficos"
+       ,"Type":"Region Display Selector"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Tabs Container (52084049936845434407)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TabsRegion-mod--simple"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Mode":"View Single Region"
+         ,"Display Region Icons":false
+         ,"Include \u0027Show All\u0027":true
+         ,"Remember Selection":"By Session"
+        }
+      }
+    }
+   ,{
+      "id":"44707899021879372401"
+     ,"Identification":{
+        "Title":"Tema"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Parent Region":"Gr\u00E1ficos (44703878014287372903)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44707899088647372402"
+       ,"Chart":{
+          "Type":"Pie"
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":false
+        }
+       ,"Settings":{
+          "Pie Selection Effect":"Highlight"
+        }
+       ,"Value":{
+          "Pie Chart Other Threshold":0
+         ,"Format":"Decimal"
+         ,"Decimal Places":0
+         ,"Format Scaling":"Automatic"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":true
+         ,"Position":"Automatic"
+         ,"Hide and Show Behavior":"None"
+        }
+       ,"Series":[
+          {
+            "id":"44707899194907372403"
+           ,"Identification":{
+              "Name":"Tema"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT TEMA, COUNT(TEMA)\nFROM SISAP_ACERVO\ngroup by TEMA\norder by TEMA asc\n"
+            }
+           ,"Column Mapping":{
+              "Label":"TEMA"
+             ,"Value":"COUNT(TEMA)"
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:21:\u0026SESSION.::\u0026DEBUG.:RP::"
+               ,"Page":"21"
+               ,"Clear Cache":"RP"
+              }
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Automatic"
+             ,"Display As":"Label - Percentage ( Value )"
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"44707899339979372404"
+     ,"Identification":{
+        "Title":"Macrotema"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":90
+       ,"Parent Region":"Gr\u00E1ficos (44703878014287372903)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44707899409394372405"
+       ,"Chart":{
+          "Type":"Pie"
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":false
+        }
+       ,"Settings":{
+          "Pie Selection Effect":"Highlight"
+        }
+       ,"Value":{
+          "Pie Chart Other Threshold":0
+         ,"Format":"Decimal"
+         ,"Decimal Places":0
+         ,"Format Scaling":"Automatic"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":true
+         ,"Position":"Automatic"
+         ,"Hide and Show Behavior":"None"
+        }
+       ,"Series":[
+          {
+            "id":"44707899494172372406"
+           ,"Identification":{
+              "Name":"Macrotema"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT MACROTEMA, COUNT(MACROTEMA)\nFROM SISAP_ACERVO\ngroup by MACROTEMA\norder by MACROTEMA asc\n"
+            }
+           ,"Column Mapping":{
+              "Label":"MACROTEMA"
+             ,"Value":"COUNT(MACROTEMA)"
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:25:\u0026SESSION.::\u0026DEBUG.:RP::"
+               ,"Page":"25"
+               ,"Clear Cache":"RP"
+              }
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Automatic"
+             ,"Display As":"Label - Percentage ( Value )"
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"44712961225349794025"
+     ,"Identification":{
+        "Title":"Tipo"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Parent Region":"Gr\u00E1ficos (44703878014287372903)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44712961295372794026"
+       ,"Chart":{
+          "Type":"Pie"
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":false
+        }
+       ,"Settings":{
+          "Pie Selection Effect":"Highlight"
+        }
+       ,"Value":{
+          "Pie Chart Other Threshold":0
+         ,"Format":"Decimal"
+         ,"Decimal Places":0
+         ,"Format Scaling":"Automatic"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":true
+         ,"Position":"Automatic"
+         ,"Hide and Show Behavior":"None"
+        }
+       ,"Series":[
+          {
+            "id":"44712961455562794027"
+           ,"Identification":{
+              "Name":"Tipo"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT TIPO, COUNT(TIPO)\nFROM SISAP_ACERVO\ngroup by TIPO\norder by TIPO asc\n"
+            }
+           ,"Column Mapping":{
+              "Label":"TIPO"
+             ,"Value":"COUNT(TIPO)"
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Automatic"
+             ,"Display As":"Label - Percentage ( Value )"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

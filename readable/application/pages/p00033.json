@@ -1,0 +1,1939 @@
+{
+  "id":"33"
+ ,"Identification":{
+    "Name":"Origem da Carga de Dados"
+   ,"Title":"Origem da Carga de Dados"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"35793784772091173531"
+     ,"Identification":{
+        "Title":"Explicacao"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--removeHeader"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"35793784807245173532"
+     ,"Identification":{
+        "Title":"Descri\u00E7\u00E3o:"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Explicacao (35793784772091173531)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Alert (52084017905769434445)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Alert--horizontal"
+         ,"t-Alert--defaultIcons"
+         ,"t-Alert--info"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Header and Footer":{
+        "Header Text":"Nesta p\u00E1gina do aplicativo, os usu\u00E1rios t\u00EAm a capacidade de realizar grandes cargas de dados. O processo envolve o download de um template que deve ser preenchido pelos usu\u00E1rios. Ao fazer a carga desses dados, s\u00E3o aplicadas valida\u00E7\u00F5es no formato do processo. Al\u00E9m disso, h\u00E1 uma verifica\u00E7\u00E3o para garantir a exist\u00EAncia dos campos \u0027TEMA\u0027, \u0027MACROTEMA\u0027, \u0027PROCESSO\u0027 e \u0027ANO\u0027 na base de dados. Todas as outras informa\u00E7\u00F5es essenciais, como relator, jurisprud\u00EAncia e ano, s\u00E3o obtidas atrav\u00E9s de consultas (SELECT) e adicionadas \u00E0 tabela de acervo correspondente ao acervo selecionado."
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"44758174915378542638"
+     ,"Identification":{
+        "Title":"Andamento do Assistente de Carga de Dados"
+       ,"Type":"List"
+      }
+     ,"Source":{
+        "List":"Andamento do Assistente de Carga de Dados - SISAP_CARGA (44758172441589542677)"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "List Template":"Wizard Progress (52084093452123434362)"
+        }
+      }
+    }
+   ,{
+      "id":"44758175273613542638"
+     ,"Identification":{
+        "Title":"Origem da Carga de Dados"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Custom Attributes":[
+          "style=\"width:100%;max-width:none;\""
+        ]
+       ,"Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"Text (escape special characters)"
+         ,"Show Line Breaks":true
+        }
+      }
+    }
+   ,{
+      "id":"53395354466504664017"
+     ,"Identification":{
+        "Title":"Selecionar Acervo"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Collapsible (52084032014915434424)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"is-collapsed"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"53395355817810664030"
+     ,"Identification":{
+        "Title":"Lista_Acervo"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select COD,\n       NOME_ACERVO card_title,\n       upper(substr(NOME_ACERVO,0,2)) card_initials,\n       null card_subtitle,\n       null card_text,\n       null card_subtext,\n       null card_icon, \n       null created_by,\n       null created,\n       null updated_by,\n       null updated,\n       APEX_PAGE.GET_URL(\n       p_page =\u003E 33,\n       p_items =\u003E \u0027P1_ACERVO\u0027,\n       p_values =\u003E NOME_ACERVO,\n       p_clear_cache =\u003E \u0027YES\u0027\n       ) CARD_LINK\nfrom SISAP_ACERVOS\nORDER BY 2"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Selecionar Acervo (53395354466504664017)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Cards (52084058986924434396)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"u-colors"
+           ,"t-Cards--featured force-fa-lg"
+           ,"t-Cards--displayInitials"
+           ,"t-Cards--3cols"
+           ,"t-Cards--hideBody"
+           ,"t-Cards--animColorFill"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"No Pagination (Show All Rows)"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"37236496030312835323"
+         ,"Identification":{
+            "Column Name":"COD"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Cod"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236496411581835321"
+         ,"Identification":{
+            "Column Name":"CARD_TITLE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Title"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236496821134835321"
+         ,"Identification":{
+            "Column Name":"CARD_INITIALS"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Initials"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":3
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236497213860835321"
+         ,"Identification":{
+            "Column Name":"CARD_SUBTITLE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Subtitle"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":4
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236497577829835321"
+         ,"Identification":{
+            "Column Name":"CARD_TEXT"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Text"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":5
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236497996342835321"
+         ,"Identification":{
+            "Column Name":"CARD_SUBTEXT"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Subtext"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":6
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236498351707835320"
+         ,"Identification":{
+            "Column Name":"CARD_ICON"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Icon"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":7
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236498797381835320"
+         ,"Identification":{
+            "Column Name":"CREATED_BY"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Created By"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":8
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236499194389835320"
+         ,"Identification":{
+            "Column Name":"CREATED"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Created"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":9
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236499633615835319"
+         ,"Identification":{
+            "Column Name":"UPDATED_BY"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Updated By"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236499981931835319"
+         ,"Identification":{
+            "Column Name":"UPDATED"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Updated"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":11
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37236500369683835319"
+         ,"Identification":{
+            "Column Name":"CARD_LINK"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Link"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":12
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"37247558848078415202"
+     ,"Identification":{
+        "Name":"P33_URL"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":false
+      }
+     ,"Layout":{
+        "Sequence":160
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Expression"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Expression":"\u0027https:\/\/contas.tcu.gov.br\/ords\/f?p=\u0027 || :APP_ID || \u0027:3:\u0027 || :APP_SESSION || \u0027:\u0027 || :REQUEST || \u0027CSV::::\u0027"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44758176577983542635"
+     ,"Identification":{
+        "Name":"P33_IMPORT_FROM"
+       ,"Type":"Radio Group"
+      }
+     ,"Label":{
+        "Label":"Importar de"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Number of Columns":1
+       ,"Page Action on Selection":"None"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"Shared Component"
+       ,"List of Values":"DATA_LOAD_OPTION (44706205074573137013)"
+       ,"Display Extra Values":false
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Custom Attributes":[
+          "checked"
+        ]
+       ,"Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"PASTE"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Escape special characters":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44758176882863542634"
+     ,"Identification":{
+        "Name":"P33_FILE_NAME"
+       ,"Type":"File Browse..."
+      }
+     ,"Label":{
+        "Label":"Nome do Arquivo"
+       ,"Alignment":"Right"
+      }
+     ,"Settings":{
+        "Display As":"Native File Browse"
+       ,"Storage Type":"Table APEX_APPLICATION_TEMP_FILES"
+       ,"Purge File at":"End of Request"
+       ,"Allow Multiple Files":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (52084095266000434358)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Nome do arquivo para upload"
+      }
+    }
+   ,{
+      "id":"44758178130479542633"
+     ,"Identification":{
+        "Name":"P33_COPY_PASTE"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":15
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44758178679415542633"
+     ,"Identification":{
+        "Name":"P33_SEPARATOR"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Novo"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"Leading and Trailing"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":";"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Identifique um caractere separador de coluna. Use \u003Cstrong\u003E\u005Ct\u003C\/strong\u003E para separadores de guia."
+      }
+    }
+   ,{
+      "id":"44758179572248542632"
+     ,"Identification":{
+        "Name":"P33_ENCLOSED_BY"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"\""
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Enter a delimiter character. You can use this character to delineate the starting and ending boundary of a data value. If you specify a delimiter character, Data Workshop ignores whitespace occurring before the starting and ending boundary of a data value. You can also use this option to enclose a data value with the specified delimiter character."
+      }
+    }
+   ,{
+      "id":"44758180430423542631"
+     ,"Identification":{
+        "Name":"P33_FIRST_ROW"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"Y"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Selecione esta caixa se seus dados contiverem nomes de coluna na primeira linha."
+      }
+    }
+   ,{
+      "id":"44758181331655542630"
+     ,"Identification":{
+        "Name":"P33_SHOW_ADV_SETTINGS"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":55
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Exibir defini\u00E7\u00F5es avan\u00E7adas para carregamento de dados: S\u00EDmbolo de Moeda, Caracteres Decimais, Codifica\u00E7\u00E3o de Arquivo ou Formatos de Data\n"
+      }
+    }
+   ,{
+      "id":"44758184047033542628"
+     ,"Identification":{
+        "Name":"P33_APP_DATE_FORMAT"
+       ,"Type":"Radio Group"
+      }
+     ,"Label":{
+        "Label":"Formatos de Data \/ N\u00FAmero a serem usados"
+       ,"Alignment":"Right top"
+      }
+     ,"Settings":{
+        "Number of Columns":1
+       ,"Page Action on Selection":"None"
+      }
+     ,"Layout":{
+        "Sequence":150
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"List of Values":{
+        "Type":"Shared Component"
+       ,"List of Values":"DATE_FORMAT_OPT (44706213659966136996)"
+       ,"Display Extra Values":true
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"Y"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Escape special characters":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Escolha se vai fornecer m\u00E1scaras de formato personalizado ou usar as de formato padr\u00E3o"
+      }
+    }
+   ,{
+      "id":"44758184986734542627"
+     ,"Identification":{
+        "Name":"P33_CHAR_SET"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Conjunto de Caracteres do Arquivo"
+       ,"Alignment":"Right"
+       ,"Table Cell Attributes":[
+          "nowrap=\"nowrap\""
+        ]
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":140
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"Shared Component"
+       ,"List of Values":"DATA_LOAD_CHARSET (44706215679584136993)"
+       ,"Display Extra Values":true
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"UTF-8"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"DATA_LOAD.CHAR_SET_ITEM_HELP"
+      }
+    }
+   ,{
+      "id":"44758185834671542626"
+     ,"Identification":{
+        "Name":"P33_CURRENCY"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"S\u00EDmbolo da Moeda"
+       ,"Alignment":"Right"
+       ,"Table Cell Attributes":[
+          "nowrap=\"nowrap\""
+        ]
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"None"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":130
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":2
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":2
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"select value\n  from nls_session_parameters\n where parameter = \u0027NLS_CURRENCY\u0027"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"$"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Se seus dados contiverem o s\u00EDmbolo de moeda internacional, informe-o aqui. Por exemplo, se seus dados tiverem \"\u0026euro;1,234.56\" ou \"\u0026yen;1,234.56\", informe \"\u0026euro;\" ou \"\u0026yen;\". Do contr\u00E1rio, os dados n\u00E3o ser\u00E3o carregados corretamente."
+      }
+    }
+   ,{
+      "id":"44758186729749542626"
+     ,"Identification":{
+        "Name":"P33_GROUP_SEPARATOR"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Separador de Grupo"
+       ,"Alignment":"Right"
+       ,"Table Cell Attributes":[
+          "nowrap=\"nowrap\""
+        ]
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"None"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":120
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":2
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":2
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Expression"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Expression":"apex_application.get_nls_group_separator"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"\u003Cp\u003EUm separador de grupo \u00E9 um caractere que separa grupos de inteiros, por exemplo, para mostrar milhares e milh\u00F5es.\u003C\/p\u003E\n\u003Cp\u003EQualquer caractere pode ser o separador de grupo. O caractere especificado deve ser monobyte, e o separador de grupo deve ser diferente de qualquer outro caractere de decimal. O caractere pode ser um espa\u00E7o, mas n\u00E3o pode ser um n\u00FAmero ou um dos seguintes:\u003C\/p\u003E\n\u003Cul class=\"noIndent\"\u003E\n\u003Cli\u003Emais (+)\u003C\/li\u003E\n\u003Cli\u003Eh\u00EDfen (-)\u003C\/li\u003E \n\u003Cli\u003Esinal de menor que (\u003C)\u003C\/li\u003E\n\u003Cli\u003Esinal de maior que (\u003E)\u003C\/li\u003E \n\u003C\/ul\u003E"
+      }
+    }
+   ,{
+      "id":"44758187608187542625"
+     ,"Identification":{
+        "Name":"P33_DECIMAL_CHARACTER"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Caractere de Decimal"
+       ,"Alignment":"Right"
+       ,"Table Cell Attributes":[
+          "nowrap=\"nowrap\""
+        ]
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"None"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":110
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":2
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":2
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Expression"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Expression":"apex_application.get_nls_decimal_separator"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"\u003Cp\u003EO caractere de decimal separa o inteiro e as partes decimais de um n\u00FAmero.\u003C\/p\u003E\n\u003Cp\u003E Qualquer caractere pode ser o caractere de decimal. O caractere especificado deve ser monobyte, e o caractere de decimal deve ser diferente do separador de grupo. O caractere pode ser um espa\u00E7o, mas n\u00E3o pode ser um n\u00FAmero ou um dos seguintes caracteres:\u003C\/p\u003E\n\u003Cul class=\"noIndent\"\u003E\n\u003Cli\u003Emais (+)\u003C\/li\u003E\n\u003Cli\u003Eh\u00EDfen (-)\u003C\/li\u003E \n\u003Cli\u003Esinal de menor que (\u003C)\u003C\/li\u003E\n\u003Cli\u003Esinal de maior que (\u003E)\u003C\/li\u003E \n\u003C\/ul\u003E"
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"44758175614009542637"
+     ,"Identification":{
+        "Button Name":"CANCEL"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"PREVIOUS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG."
+         ,"Page":"33"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"44758176019930542636"
+     ,"Identification":{
+        "Button Name":"NEXT"
+       ,"Label":"Pr\u00F3ximo"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to URL"
+       ,"Target":"javascript:apex.widget.textareaClob.uploadNonEmpty(\u0027P33_COPY_PASTE\u0027, \u0027NEXT\u0027);"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"44758263319660522889"
+     ,"Identification":{
+        "Button Name":"Download_Template"
+       ,"Label":"Download Template"
+      }
+     ,"Layout":{
+        "Sequence":160
+       ,"Region":"Origem da Carga de Dados (44758175273613542638)"
+       ,"Position":"COPY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--success"
+         ,"t-Button--simple"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to URL"
+       ,"Target":"\u0026P33_URL."
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"44758182537128542630"
+     ,"Identification":{
+        "Name":"Show\/Hide Advanced Settings"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CHANGE"
+       ,"Selection Type":"Item(s)"
+       ,"Item(s)":[
+          "P33_SHOW_ADV_SETTINGS"
+        ]
+      }
+     ,"Client-side Condition":{
+        "Type":"Item = Value"
+       ,"Item":"P33_SHOW_ADV_SETTINGS"
+       ,"Value":"Y"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"44758183035552542629"
+         ,"Identification":{
+            "Action":"Show"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_CURRENCY"
+             ,"P33_GROUP_SEPARATOR"
+             ,"P33_DECIMAL_CHARACTER"
+             ,"P33_APP_DATE_FORMAT"
+             ,"P33_CHAR_SET"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Show\/Hide Advanced Settings (44758182537128542630)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+          }
+        }
+       ,{
+          "id":"44758183579577542629"
+         ,"Identification":{
+            "Action":"Hide"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_CURRENCY"
+             ,"P33_GROUP_SEPARATOR"
+             ,"P33_DECIMAL_CHARACTER"
+             ,"P33_APP_DATE_FORMAT"
+             ,"P33_CHAR_SET"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Show\/Hide Advanced Settings (44758182537128542630)"
+           ,"Fire When Event Result Is":"False"
+           ,"Fire on Initialization":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44758188389565542624"
+     ,"Identification":{
+        "Name":"Import From Copy and Paste"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CHANGE"
+       ,"Selection Type":"Item(s)"
+       ,"Item(s)":[
+          "P33_IMPORT_FROM"
+        ]
+      }
+     ,"Client-side Condition":{
+        "Type":"Item = Value"
+       ,"Item":"P33_IMPORT_FROM"
+       ,"Value":"PASTE"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"44758188898505542624"
+         ,"Identification":{
+            "Action":"Show"
+          }
+         ,"Settings":{
+            "Show all on the same line":true
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_COPY_PASTE"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":20
+           ,"Event":"Import From Copy and Paste (44758188389565542624)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+          }
+        }
+       ,{
+          "id":"44758189413418542624"
+         ,"Identification":{
+            "Action":"Set Value"
+          }
+         ,"Settings":{
+            "Set Type":"Static Assignment"
+           ,"Value":"\u005Ct"
+           ,"Suppress Change Event":false
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_SEPARATOR"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":20
+           ,"Event":"Import From Copy and Paste (44758188389565542624)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+       ,{
+          "id":"44758189940336542624"
+         ,"Identification":{
+            "Action":"Hide"
+          }
+         ,"Settings":{
+            "Hide all page items on the same line":true
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_COPY_PASTE"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":20
+           ,"Event":"Import From Copy and Paste (44758188389565542624)"
+           ,"Fire When Event Result Is":"False"
+           ,"Fire on Initialization":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44758190331183542624"
+     ,"Identification":{
+        "Name":"Import from File"
+      }
+     ,"Execution":{
+        "Sequence":20
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CHANGE"
+       ,"Selection Type":"Item(s)"
+       ,"Item(s)":[
+          "P33_IMPORT_FROM"
+        ]
+      }
+     ,"Client-side Condition":{
+        "Type":"Item = Value"
+       ,"Item":"P33_IMPORT_FROM"
+       ,"Value":"UPLOAD"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"44758190837266542623"
+         ,"Identification":{
+            "Action":"Show"
+          }
+         ,"Settings":{
+            "Show all on the same line":true
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_FILE_NAME"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Import from File (44758190331183542624)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+          }
+        }
+       ,{
+          "id":"44758191350219542623"
+         ,"Identification":{
+            "Action":"Set Value"
+          }
+         ,"Settings":{
+            "Set Type":"Static Assignment"
+           ,"Value":","
+           ,"Suppress Change Event":false
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_SEPARATOR"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":20
+           ,"Event":"Import from File (44758190331183542624)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+       ,{
+          "id":"44758191811342542623"
+         ,"Identification":{
+            "Action":"Hide"
+          }
+         ,"Settings":{
+            "Hide all page items on the same line":true
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_FILE_NAME"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":20
+           ,"Event":"Import from File (44758190331183542624)"
+           ,"Fire When Event Result Is":"False"
+           ,"Fire on Initialization":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"44758263389336522890"
+     ,"Identification":{
+        "Name":"OCULTAR"
+      }
+     ,"Execution":{
+        "Sequence":30
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CHANGE"
+       ,"Selection Type":"Item(s)"
+       ,"Item(s)":[
+          "P33_SEPARATOR"
+        ]
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"44758263583138522891"
+         ,"Identification":{
+            "Action":"Hide"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P33_SEPARATOR"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"OCULTAR (44758263389336522890)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+          }
+        }
+      ]
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"44758177856615542633"
+     ,"Identification":{
+        "Name":"Filename is not null"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P33_FILE_NAME"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"#LABEL# deve ter algum valor."
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P33_FILE_NAME (44758176882863542634)"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758176019930542636)"
+       ,"Type":"Item = Value"
+       ,"Item":"P33_IMPORT_FROM"
+       ,"Value":"UPLOAD"
+      }
+    }
+   ,{
+      "id":"44758182189922542630"
+     ,"Identification":{
+        "Name":"Uploaded data is not null"
+      }
+     ,"Execution":{
+        "Sequence":20
+      }
+     ,"Validation":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P33_COPY_PASTE"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"#LABEL# deve ter algum valor."
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P33_COPY_PASTE (44758178130479542633)"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758176019930542636)"
+       ,"Type":"Item = Value"
+       ,"Item":"P33_IMPORT_FROM"
+       ,"Value":"PASTE"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"44758192384022542623"
+     ,"Identification":{
+        "Name":"Parse Uploaded Data"
+       ,"Type":"Parse Uploaded Data [Legacy]"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Data Load Definition":"SISAP_CARGA (44757339356420187237)"
+       ,"Import From Item":"P33_IMPORT_FROM"
+       ,"Separator Item":"P33_SEPARATOR"
+       ,"Enclosed By Item":"P33_ENCLOSED_BY"
+       ,"First Row Item":"P33_FIRST_ROW"
+       ,"Currency Symbol Item":"P33_CURRENCY"
+       ,"Group Separator Item":"P33_GROUP_SEPARATOR"
+       ,"Decimal Character Item":"P33_DECIMAL_CHARACTER"
+       ,"File Name Item":"P33_FILE_NAME"
+       ,"Copy and Paste Item":"P33_COPY_PASTE"
+       ,"Character Set Item":"P33_CHAR_SET"
+       ,"Date Format Item":"P33_APP_DATE_FORMAT"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758176019930542636)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"44758192725566542622"
+     ,"Identification":{
+        "Name":"Go To Page 34"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:34:\u0026SESSION.\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"34"
+        }
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758176019930542636)"
+      }
+    }
+  ]
+}

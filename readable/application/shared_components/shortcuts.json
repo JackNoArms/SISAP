@@ -1,0 +1,22 @@
+[
+  {
+    "id":"44706693904194515302"
+   ,"Identification":{
+      "Name":"OK_TO_GET_NEXT_PREV_PK_VALUE"
+    }
+   ,"Source":{
+      "Type":"Text with JavaScript Escaped Single Quotes"
+     ,"Text":"Tem certeza de que deseja sair desta p\u00E1gina sem salvar?"
+    }
+  }
+ ,{
+    "id":"52084120356487434283"
+   ,"Identification":{
+      "Name":"DELETE_CONFIRM_MSG"
+    }
+   ,"Source":{
+      "Type":"Text with JavaScript Escaped Single Quotes"
+     ,"Text":"Gostaria de executar esta a\u00E7\u00E3o de exclus\u00E3o?"
+    }
+  }
+]

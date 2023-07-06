@@ -1,0 +1,1173 @@
+{
+  "id":"5"
+ ,"Identification":{
+    "Name":"Inserir Processos"
+   ,"Title":"Inserir Processos"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"HTML Header":{
+    "HTML Header":"\u003Cscript language=\"JavaScript\" type=\"text\/javascript\"\u003E\n\u003C!--\nfunction formatar_mascara(src,mascara){\n  var campo = src.value.length;\n  var saida = mascara.substring(0,1);\n  var texto = mascara.substring(campo);\n  if(texto.substring(0,1) != saida) {\n  src.value+=texto.substring(0,1);\n  }\n}\n\/\/--\u003E\n\u003C\/script\u003E"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"35793784681131173530"
+     ,"Identification":{
+        "Title":"Descri\u00E7\u00E3o:"
+       ,"Type":"Help Text"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Buscador (44696117154104828301)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Alert (52084017905769434445)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Alert--horizontal"
+         ,"t-Alert--defaultIcons"
+         ,"t-Alert--info"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Header and Footer":{
+        "Header Text":"Essa p\u00E1gina pesquisava no banco de dados do TCU chamada de LabContas e verificava se o processo que o usu\u00E1rio queria adicionar j\u00E1 existia nesse acervo."
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+    }
+   ,{
+      "id":"44696117154104828301"
+     ,"Identification":{
+        "Title":"Buscador"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Tudo (44704408447440596495)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"44704408447440596495"
+     ,"Identification":{
+        "Title":"Tudo"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--removeHeader"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"45313292353142033565"
+     ,"Identification":{
+        "Title":"Selecionar Acervo"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":5
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Collapsible (52084032014915434424)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"is-collapsed"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"45313293704448033578"
+     ,"Identification":{
+        "Title":"Lista_Acervo"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select COD,\n       NOME_ACERVO card_title,\n       upper(substr(NOME_ACERVO,0,2)) card_initials,\n       null card_subtitle,\n       null card_text,\n       null card_subtext,\n       null card_icon, \n       null created_by,\n       null created,\n       null updated_by,\n       null updated,\n       APEX_PAGE.GET_URL(\n       p_page =\u003E 5,\n       p_items =\u003E \u0027P1_ACERVO\u0027,\n       p_values =\u003E NOME_ACERVO,\n       p_clear_cache =\u003E \u0027YES\u0027\n       ) CARD_LINK\nfrom SISAP_ACERVOS\nORDER BY 2"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Selecionar Acervo (45313292353142033565)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Cards (52084058986924434396)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"u-colors"
+           ,"t-Cards--featured force-fa-lg"
+           ,"t-Cards--displayInitials"
+           ,"t-Cards--3cols"
+           ,"t-Cards--hideBody"
+           ,"t-Cards--animColorFill"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"No Pagination (Show All Rows)"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"37233925987373750547"
+         ,"Identification":{
+            "Column Name":"COD"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Cod"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":1
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233926378355750547"
+         ,"Identification":{
+            "Column Name":"CARD_TITLE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Title"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":2
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233926753688750547"
+         ,"Identification":{
+            "Column Name":"CARD_INITIALS"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Initials"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":3
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233927183128750546"
+         ,"Identification":{
+            "Column Name":"CARD_SUBTITLE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Subtitle"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":4
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233927638667750546"
+         ,"Identification":{
+            "Column Name":"CARD_TEXT"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Text"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":5
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233927991868750546"
+         ,"Identification":{
+            "Column Name":"CARD_SUBTEXT"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Subtext"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":6
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233928425023750546"
+         ,"Identification":{
+            "Column Name":"CARD_ICON"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Icon"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":7
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233928832925750546"
+         ,"Identification":{
+            "Column Name":"CREATED_BY"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Created By"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":8
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233929158728750545"
+         ,"Identification":{
+            "Column Name":"CREATED"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Created"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":9
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233929558337750545"
+         ,"Identification":{
+            "Column Name":"UPDATED_BY"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Updated By"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233929961174750545"
+         ,"Identification":{
+            "Column Name":"UPDATED"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Updated"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":11
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"37233930430461750545"
+         ,"Identification":{
+            "Column Name":"CARD_LINK"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Card Link"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":12
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"52128252114620386970"
+     ,"Identification":{
+        "Title":"Relatorio"
+       ,"Type":"Interactive Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT *\nFROM SISAP_ACERVOS\n"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"Tudo (44704408447440596495)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (52084042044377434417)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Below Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"52128252187583386971"
+       ,"Link":{
+          "Link Column":"Link to Custom Target"
+         ,"Target":{
+            "url":"f?p=\u0026APP_ID.:18:\u0026SESSION.::\u0026DEBUG.::P18_PROCESSO,P18_ANO,P18_ASSUNTO,P18_UT,P18_ESTADO,P18_RELATOR,P18_SITUA\u00C7\u00C3O_DO_PROCESSO,P18_TIPO:\u0026P5_PROCESSO.,#ANO#,#TEXTO_COMPLEMENTO_ASSUNTO#,#SIGLA#,#ESTADO#,#RELATOR#,#SITUACAO_PROCESSO#,#TIPO#"
+           ,"Page":"18"
+           ,"Values":{
+              "P18_PROCESSO":"\u0026P5_PROCESSO."
+             ,"P18_ANO":"#ANO#"
+             ,"P18_ASSUNTO":"#TEXTO_COMPLEMENTO_ASSUNTO#"
+             ,"P18_UT":"#SIGLA#"
+             ,"P18_ESTADO":"#ESTADO#"
+             ,"P18_RELATOR":"#RELATOR#"
+             ,"P18_SITUA\u00C7\u00C3O_DO_PROCESSO":"#SITUACAO_PROCESSO#"
+             ,"P18_TIPO":"#TIPO#"
+            }
+          }
+         ,"Link Icon":"\u003Ch1\u003E\u0026#43;\u003C\/h1\u003E"
+         ,"Link Attributes":"title=\"Adicionar Processo\""
+        }
+       ,"Appearance":{
+          "Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+         ,"Maximum Rows to Process":1000000
+        }
+       ,"Search Bar":{
+          "Include Search Bar":false
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"52128421736196699356"
+           ,"Identification":{
+              "Name":"Primary Report"
+             ,"Alias":"74380821"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"35793781737758173501"
+           ,"Identification":{
+              "Column Name":"NOME_ACERVO"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Nome Acervo"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":20
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"52128252343433386972"
+           ,"Identification":{
+              "Column Name":"COD"
+             ,"Type":"Hidden Column"
+            }
+           ,"Heading":{
+              "Heading":"Cod"
+            }
+           ,"Layout":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Security":{
+              "Escape special characters":false
+            }
+          }
+        ]
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"45297123809343043636"
+     ,"Identification":{
+        "Name":"P5_COD_ACERVO"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"Buscador (44696117154104828301)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT COD\nFROM SISAP_ACERVOS\nWHERE :P1_ACERVO = NOME_ACERVO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per User (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45299454759190842867"
+     ,"Identification":{
+        "Name":"P5_ACERVO"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"ACERVO"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Buscador (44696117154104828301)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (52084094610832434361)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT NOME_ACERVO\nFROM SISAP_ACERVOS\nWHERE :P1_ACERVO = NOME_ACERVO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per User (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"52114482825002884363"
+     ,"Identification":{
+        "Name":"P5_PROCESSO"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Processo"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"Leading and Trailing"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Buscador (44696117154104828301)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Value Placeholder":"XXX.XXX\/XXXX-X"
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":14
+      }
+     ,"Advanced":{
+        "Custom Attributes":[
+          "mask:"
+         ,"onkeyPress=\"javascript:{formatar_mascara(this,"
+         ,"\u0027###.###\/####-#\u0027);"
+         ,"}\""
+         ,"onchange=\"htmldb_item_change(this)\""
+        ]
+       ,"Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"52114482958661884364"
+     ,"Identification":{
+        "Name":"P5_COD_PROCESSO"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Buscador (44696117154104828301)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"52114482985033884365"
+     ,"Identification":{
+        "Button Name":"Pesquisar"
+       ,"Label":"Pesquisar"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Buscador (44696117154104828301)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Column Attributes":[
+          "style"
+         ,"=\"top:12px;"
+         ,"right:5px;\""
+        ]
+       ,"Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Icon (52084095282997434358)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+        ]
+       ,"Icon":"fa-search"
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":false
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"44695424087803011990"
+     ,"Identification":{
+        "Name":"Verificar"
+      }
+     ,"Execution":{
+        "Sequence":30
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Region"
+       ,"Region":"Relatorio (52128252114620386970)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"44695424111155011991"
+         ,"Identification":{
+            "Action":"Execute JavaScript Code"
+          }
+         ,"Settings":{
+            "Code":"\/\/ Obt\u00E9m os valores dos itens da p\u00E1gina\nvar valorProcesso = $v(\"P5_PROCESSO\");\nvar valorCodAcervo = $v(\"P5_COD_ACERVO\");\n\n\/\/ Verifica se as colunas s\u00E3o iguais aos valores dos itens\nif (apex.item(\"P5_PROCESSO\").getValue() === $v(\"sisap_carga_temp.PROCESSO\") \u0026\u0026 apex.item(\"P5_COD_ACERVO\").getValue() === $v(\"sisap_carga_temp.COD_ACERVO\")) {\n  \/\/ As colunas s\u00E3o iguais aos valores dos itens\n  console.log(\"As colunas s\u00E3o iguais aos valores dos itens.\");\n\n  \/\/ Submete a p\u00E1gina\n  apex.page.submit();\n} else {\n  \/\/ As colunas n\u00E3o s\u00E3o iguais aos valores dos itens\n  console.log(\"As colunas n\u00E3o s\u00E3o iguais aos valores dos itens.\");\n}\n"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Verificar (44695424087803011990)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"44696439186867144318"
+     ,"Identification":{
+        "Name":"Verificar"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"select *\nfrom VW_SISAP_TEMP\nwhere :P5_PROCESSO = PROCESSO and COD_ACERVO = :P5_COD_ACERVO"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Processo j\u00E1 existe no acervo selecionado."
+       ,"Display Location":"Inline with Field and in Notification"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL and NOT zero"
+       ,"Item":"P5_PROCESSO"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"37243710592704892317"
+     ,"Identification":{
+        "Name":"Preencher Cod_Acervo"
+       ,"Type":"Execute Code"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"UPDATE sisap_carga_temp\nSET cod_acervo = (SELECT COD FROM SISAP_ACERVOS WHERE NOME_ACERVO = :P1_ACERVO)\nWHERE cod_acervo IS NULL;\n"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"After Submit"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"52114482721186884362"
+     ,"Identification":{
+        "Name":"Pesquisa  Processo"
+       ,"Type":"Execute Code"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"-- Precisa fazer a pesquisa por numero, ano e NUM_DV, esse regex separa a string informada pelo usu\u00E1rio nesses 3 valores e faz uma consulta para achar o COD\nBEGIN\n    SELECT MAX(COD) INTO :P5_COD_PROCESSO\n    FROM TCU.VW_APEX_PROCESSO_GESTAO\n    WHERE\n      REGEXP_LIKE   (LPAD(:P5_PROCESSO, 14, \u00270\u0027), \u0027^(\u005Cd{3})\u005C.(\u005Cd{3})\u005C\/(\u005Cd{4})\u005C-(\u005Cd)$\u0027) AND\n      REGEXP_REPLACE(LPAD(:P5_PROCESSO, 14, \u00270\u0027), \u0027^(\u005Cd{3})\u005C.(\u005Cd{3})\u005C\/.*\u0027            , \u0027\u005C1\u005C2\u0027) = NUM AND\n      REGEXP_REPLACE(:P5_PROCESSO,                \u0027.*\u005C\/(\u005Cd{4})\u005C-.*\u0027   , \u0027\u005C1\u0027) = ANO AND\n      REGEXP_REPLACE(:P5_PROCESSO,                         \u0027.*\u005C-(\u005Cd)$\u0027, \u0027\u005C1\u0027) = NUM_DV;\n      \n       \nEXCEPTION WHEN NO_DATA_FOUND THEN\n    APEX_ERROR.ADD_ERROR(\n        \u0027O processo buscado n\u00E3o foi encontrado\u0027,\n        p_display_location =\u003E APEX_ERROR.C_INLINE_IN_NOTIFICATION\n    );\nEND;\n"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Error Message":"Processo n\u00E3o encontrado ou n\u00E3o existe!"
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"Pesquisar (52114482985033884365)"
+      }
+    }
+  ]
+}

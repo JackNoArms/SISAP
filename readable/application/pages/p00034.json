@@ -1,0 +1,296 @@
+{
+  "id":"34"
+ ,"Identification":{
+    "Name":"Mapeamento de Dados \/ Tabela"
+   ,"Title":"Mapeamento de Dados \/ Tabela"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":".rc-content-main {height: 400px; overflow: auto !important;}"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"44758193512498542621"
+     ,"Identification":{
+        "Title":"Andamento do Assistente de Carga de Dados"
+       ,"Type":"List"
+      }
+     ,"Source":{
+        "List":"Andamento do Assistente de Carga de Dados - SISAP_CARGA (44758172441589542677)"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "List Template":"Wizard Progress (52084093452123434362)"
+        }
+      }
+    }
+   ,{
+      "id":"44758193880576542620"
+     ,"Identification":{
+        "Title":"Mapeamento de Dados \/ Tabela"
+       ,"Type":"Data Upload Column Mapping [Legacy]"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Custom Attributes":[
+          "style=\"width:100%;max-width:none;\""
+        ]
+       ,"Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Data Load Definition":"SISAP_CARGA (44757339356420187237)"
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"44758194194290542620"
+     ,"Identification":{
+        "Button Name":"CANCEL"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Mapeamento de Dados \/ Tabela (44758193880576542620)"
+       ,"Position":"PREVIOUS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG."
+         ,"Page":"33"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"44758194771953542620"
+     ,"Identification":{
+        "Button Name":"PREVIOUS"
+       ,"Label":"Anterior"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Mapeamento de Dados \/ Tabela (44758193880576542620)"
+       ,"Position":"PREVIOUS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG."
+         ,"Page":"33"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"44758195022682542620"
+     ,"Identification":{
+        "Button Name":"NEXT"
+       ,"Label":"Pr\u00F3ximo"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Mapeamento de Dados \/ Tabela (44758193880576542620)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"44758195549506542620"
+     ,"Identification":{
+        "Name":"Prepare Uploaded Data"
+       ,"Type":"Prepare Uploaded Data [Legacy]"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Data Load Definition":"SISAP_CARGA (44757339356420187237)"
+       ,"Insert Count Item":"P36_INSERT_COUNT"
+       ,"Update Count Item":"P36_UPDATE_COUNT"
+       ,"Error Count Item":"P36_ERROR_COUNT"
+       ,"Review Count Item":"P36_REVIEW_COUNT"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758195022682542620)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"44758195941334542619"
+     ,"Identification":{
+        "Name":"Go To Page 35"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:35:\u0026SESSION.\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"35"
+        }
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758195022682542620)"
+       ,"Type":"Function Body"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Function Body":"                   begin\n                            for c1 in (select skip_validation\n                                      from apex_appl_load_tables\n                                      where name = \u0027SISAP_CARGA\u0027 and application_id = apex_application.g_flow_id )\n                            loop\n                                if c1.skip_validation = \u0027N\u0027 then return true;\n                                else return false;\n                                end if;\n                            end loop;\n                        end;"
+      }
+    }
+   ,{
+      "id":"44758196385042542619"
+     ,"Identification":{
+        "Name":"Go To Page 36"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:36:\u0026SESSION.\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"36"
+        }
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"NEXT (44758195022682542620)"
+       ,"Type":"Function Body"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Function Body":"                   begin\n                            for c1 in (select skip_validation\n                                      from apex_appl_load_tables\n                                      where name = \u0027SISAP_CARGA\u0027 and application_id = apex_application.g_flow_id )\n                            loop\n                                if c1.skip_validation = \u0027Y\u0027 then return true;\n                                else return false;\n                                end if;\n                            end loop;\n                        end;"
+      }
+    }
+  ]
+}

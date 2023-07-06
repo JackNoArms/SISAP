@@ -1,0 +1,22 @@
+[
+  {
+    "id":"52084118351592434289"
+   ,"Identification":{
+      "File Name":"app-icon.svg"
+    }
+   ,"Attributes":{
+      "Mime Type":"image\/svg+xml"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+ ,{
+    "id":"52084118587935434286"
+   ,"Identification":{
+      "File Name":"app-icon.css"
+    }
+   ,"Attributes":{
+      "Mime Type":"text\/css"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+]

@@ -1,0 +1,1408 @@
+[
+  {
+    "id":"44693147295540501088"
+   ,"Identification":{
+      "Name":"Configura\u00E7\u00E3o do Aplicativo"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Configuration":{
+      "Build Option":"Recurso: Op\u00E7\u00F5es de Configura\u00E7\u00E3o (44693138971106501166)"
+    }
+   ,"Entries":[
+      {
+        "id":"44693147748248501085"
+       ,"Label":{
+          "Label":"Op\u00E7\u00F5es de Configura\u00E7\u00E3o"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-sliders"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10010:\u0026SESSION.::\u0026DEBUG.:10010:::"
+           ,"Page":"10010"
+           ,"Clear Cache":"10010"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"1.":"Ativar ou desativar funcionalidades do aplicativo"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44706200876365137026"
+   ,"Identification":{
+      "Name":"Andamento do Assistente de Carga de Dados - SISAP_CARGA"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44706201266914137024"
+       ,"Label":{
+          "Label":"Origem da Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:4:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"4"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44706201598248137022"
+       ,"Label":{
+          "Label":"Mapeamento de Dados \/ Tabela"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:7:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"7"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44706202060330137022"
+       ,"Label":{
+          "Label":"Valida\u00E7\u00E3o de Dados"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:8:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"8"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44706202409196137022"
+       ,"Label":{
+          "Label":"Resultados de Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:9:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"9"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44719120386440283654"
+   ,"Identification":{
+      "Name":"Relat\u00F3rios de Atividades"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Configuration":{
+      "Build Option":"Recurso: Relat\u00F3rio de Atividades (44719064070653283732)"
+    }
+   ,"Entries":[
+      {
+        "id":"44719120700734283653"
+       ,"Label":{
+          "Label":"Painel de Controle"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-area-chart"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10010:\u0026SESSION.::\u0026DEBUG.:10010:::"
+           ,"Page":"10010"
+           ,"Clear Cache":"10010"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"1.":"Exibir m\u00E9tricas de atividade do aplicativo"
+        }
+      }
+     ,{
+        "id":"44719121165649283653"
+       ,"Label":{
+          "Label":"Principais Usu\u00E1rios"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-chart"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10011:\u0026SESSION.::\u0026DEBUG.:10011:::"
+           ,"Page":"10011"
+           ,"Clear Cache":"10011"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"1.":"Relat\u00F3rio de views de p\u00E1gina agregadas por usu\u00E1rio"
+        }
+      }
+     ,{
+        "id":"44719121550406283653"
+       ,"Label":{
+          "Label":"Log de Erros do Aplicativo"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-exclamation"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10012:\u0026SESSION.::\u0026DEBUG.:10012:::"
+           ,"Page":"10012"
+           ,"Clear Cache":"10012"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"1.":"Relat\u00F3rio de erros registrados por este aplicativo"
+        }
+      }
+     ,{
+        "id":"44719121960841283653"
+       ,"Label":{
+          "Label":"Desempenho da P\u00E1gina"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-file-chart"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10013:\u0026SESSION.::\u0026DEBUG.:10013:::"
+           ,"Page":"10013"
+           ,"Clear Cache":"10013"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"1.":"Relat\u00F3rio de atividade e desempenho por p\u00E1gina do aplicativo"
+        }
+      }
+     ,{
+        "id":"44719122293388283652"
+       ,"Label":{
+          "Label":"Views de P\u00E1gina"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-file-search"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10014:\u0026SESSION.::\u0026DEBUG.:RIR,10014:::"
+           ,"Page":"10014"
+           ,"Clear Cache":"RIR,10014"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"1.":"Relat\u00F3rio de cada visualiza\u00E7\u00E3o de p\u00E1gina por usu\u00E1rio, incluindo a data de acesso e o tempo decorrido"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44757215359702330745"
+   ,"Identification":{
+      "Name":"Andamento do Assistente de Carga de Dados - SISAP_CARGA_TEMP"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44757215753157330744"
+       ,"Label":{
+          "Label":"Origem da Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44757216108312330743"
+       ,"Label":{
+          "Label":"Mapeamento de Dados \/ Tabela"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:34:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"34"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44757216563868330743"
+       ,"Label":{
+          "Label":"Valida\u00E7\u00E3o de Dados"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:35:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"35"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44757216895741330743"
+       ,"Label":{
+          "Label":"Resultados de Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:36:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"36"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44757339916367187233"
+   ,"Identification":{
+      "Name":"Andamento do Assistente de Carga de Dados - SISAP_CARGA"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44757340370892187233"
+       ,"Label":{
+          "Label":"Origem da Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44757340713982187232"
+       ,"Label":{
+          "Label":"Mapeamento de Dados \/ Tabela"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:34:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"34"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44757341103286187231"
+       ,"Label":{
+          "Label":"Valida\u00E7\u00E3o de Dados"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:35:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"35"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44757341526627187231"
+       ,"Label":{
+          "Label":"Resultados de Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:36:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"36"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44758172441589542677"
+   ,"Identification":{
+      "Name":"Andamento do Assistente de Carga de Dados - SISAP_CARGA"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44758172738656542675"
+       ,"Label":{
+          "Label":"Origem da Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44758173139380542674"
+       ,"Label":{
+          "Label":"Mapeamento de Dados \/ Tabela"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:34:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"34"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44758173522999542674"
+       ,"Label":{
+          "Label":"Valida\u00E7\u00E3o de Dados"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:35:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"35"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44758173922506542674"
+       ,"Label":{
+          "Label":"Resultados de Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:36:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"36"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44760980063439599718"
+   ,"Identification":{
+      "Name":"Wizard Progress List"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44760991845992599703"
+       ,"Label":{
+          "Label":"Etapa 3"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:39:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"39"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"44761164598889848918"
+   ,"Identification":{
+      "Name":"Andamento do Assistente de Carga de Dados - SISAP_CARGA"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44761164923039848916"
+       ,"Label":{
+          "Label":"Origem da Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:55:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"55"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44761165335981848914"
+       ,"Label":{
+          "Label":"Mapeamento de Dados \/ Tabela"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:56:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"56"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44761165717073848914"
+       ,"Label":{
+          "Label":"Valida\u00E7\u00E3o de Dados"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:57:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"57"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44761166096483848914"
+       ,"Label":{
+          "Label":"Resultados de Carga de Dados"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:58:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"58"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"52083996995632434479"
+   ,"Identification":{
+      "Name":"Menu de Navega\u00E7\u00E3o da \u00C1rea de Trabalho"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44703801386676651057"
+       ,"Label":{
+          "Label":"Estat\u00EDsticas"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-percent"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "6"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:6:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"6"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44706203105955137020"
+       ,"Label":{
+          "Label":"Carga de Dados"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-arrow-circle-o-down"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "4"
+           ,"33"
+           ,"33"
+           ,"33"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44707858810961830287"
+       ,"Label":{
+          "Label":"Gerenciar Tema"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-tag"
+        }
+       ,"Layout":{
+          "Sequence":60
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:26:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"26"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44707859131035823514"
+       ,"Label":{
+          "Label":"Gerenciar Macrotema"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-tags"
+        }
+       ,"Layout":{
+          "Sequence":70
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:2:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"2"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44719119256053283657"
+       ,"Label":{
+          "Label":"Administra\u00E7\u00E3o de Atividades"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-wrench"
+        }
+       ,"Layout":{
+          "Sequence":80
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "10000"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10000:\u0026SESSION.::\u0026DEBUG."
+           ,"Page":"10000"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44756979599601193477"
+       ,"Label":{
+          "Label":"Gerenciar \u00D3rg\u00E3os\/Entidades"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-building-o"
+        }
+       ,"Layout":{
+          "Sequence":75
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "31"
+           ,"32"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:31:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"31"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"45299278488850061417"
+       ,"Label":{
+          "Label":"Gerenciar Acervos"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-layers"
+        }
+       ,"Layout":{
+          "Sequence":55
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:59:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"59"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"52084129440060434235"
+       ,"Label":{
+          "Label":"In\u00EDcio"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-home"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:1:\u0026APP_SESSION.::\u0026DEBUG.:"
+           ,"Page":"1"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"52084130997324434230"
+       ,"Label":{
+          "Label":"Acervo"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-table-user"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:9:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"9"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"52111740270115103882"
+       ,"Label":{
+          "Label":"Inserir Processo"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-clipboard-search"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:5:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"5"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"52084117040960434324"
+   ,"Identification":{
+      "Name":"Barra de Navega\u00E7\u00E3o da \u00C1rea de Trabalho"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"52084201780987434027"
+       ,"Label":{
+          "Label":"\u0026APP_USER."
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"#"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"2.":"has-username"
+        }
+      }
+     ,{
+        "id":"52084202341437434026"
+       ,"Label":{
+          "Label":"---"
+        }
+       ,"Layout":{
+          "Sequence":20
+         ,"Parent Entry":"\u0026APP_USER. (52084201780987434027)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"separator"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"52084202766926434026"
+       ,"Label":{
+          "Label":"Sair"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-sign-out"
+        }
+       ,"Layout":{
+          "Sequence":30
+         ,"Parent Entry":"\u0026APP_USER. (52084201780987434027)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"\u0026LOGOUT_URL."
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"52084200349927434029"
+   ,"Identification":{
+      "Name":"Navega\u00E7\u00E3o por P\u00E1gina"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"44703928766506136961"
+       ,"Label":{
+          "Label":"Estat\u00EDsticas"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-percent"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:6:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"6"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44706305496412127119"
+       ,"Label":{
+          "Label":"Carga de Dados"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-arrow-circle-o-down"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44707860386160817846"
+       ,"Label":{
+          "Label":"Gerenciar Tema"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-tag"
+        }
+       ,"Layout":{
+          "Sequence":60
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:26:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"26"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44707860807271815593"
+       ,"Label":{
+          "Label":"Gerenciar Macrotema"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-tags"
+        }
+       ,"Layout":{
+          "Sequence":70
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:2:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"2"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44719124640305274440"
+       ,"Label":{
+          "Label":"Administra\u00E7\u00E3o de Atividades"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-wrench"
+        }
+       ,"Layout":{
+          "Sequence":80
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10000:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"10000"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"44756989764692971875"
+       ,"Label":{
+          "Label":"Gerenciador \u00D3rg\u00E3os\/Entidades"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-building-o"
+        }
+       ,"Layout":{
+          "Sequence":75
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:31:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"31"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"45299279014619052900"
+       ,"Label":{
+          "Label":"Gerenciar Acervos"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-layers"
+        }
+       ,"Layout":{
+          "Sequence":55
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:59:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"59"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"52084200734233434028"
+       ,"Label":{
+          "Label":"Acervo"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-table-user"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:9:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"9"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"52111740936588101430"
+       ,"Label":{
+          "Label":"Inserir Processo"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-clipboard-search"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:5:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"5"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+]

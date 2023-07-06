@@ -1,0 +1,125 @@
+{
+  "id":"129733"
+ ,"Identification":{
+    "Name":"SISAP"
+   ,"Alias":"SISAP_AMBIENTAL"
+   ,"Version":"Release 1.0"
+  }
+ ,"Row Search":{
+    "Tokenize":false
+  }
+ ,"Availability":{
+    "Status":"Available with Developer Toolbar"
+   ,"Build Status":"Run and Build Application"
+  }
+ ,"Error Handling":{
+    "Default Display Location":"Inline with Field and in Notification"
+  }
+ ,"Report Printing":{
+    "Type":"Use Instance Settings"
+  }
+ ,"Advanced":{
+    "Friendly URLs":false
+   ,"Allow Feedback":true
+   ,"Logging":true
+   ,"Debugging":true
+   ,"Compatibility Mode":"5.1 \/ 18.1 \/ 18.2"
+  }
+ ,"Authentication":{
+    "Public User":"APEX_PUBLIC_USER"
+   ,"Authentication Scheme":"Autentica\u00E7\u00E3o do Application Express (52083996212168434486)"
+  }
+ ,"Authorization":{
+    "Source for Role or Group Schemes":"Access Control User Role Assignments"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Disabled"
+  }
+ ,"Session State Protection":{
+    "Enabled":true
+  }
+ ,"Security":{
+    "Deep Linking":"Disabled"
+   ,"Browser Cache":"Disabled"
+   ,"Embed in Frames":"Deny"
+   ,"Referrer Policy":"strict-origin-when-cross-origin"
+   ,"HTML Escaping Mode":"Basic"
+   ,"Runtime API Usage":[
+      "Modify This Application"
+    ]
+  }
+ ,"Advanced":{
+    "Pass ECID":"N"
+  }
+ ,"Database Session":{
+    "Parsing Schema":"WKSP_WORKPLACETESTES"
+  }
+ ,"Globalization":{
+    "Primary Language":"Portuguese (Brazil) (pt-br)"
+   ,"Document Direction":"Left-To-Right"
+   ,"Language Derived From":"Application Primary Language"
+   ,"Automatic Time Zone":false
+   ,"Automatic CSV Encoding":true
+  }
+ ,"Character Value Comparison":{
+    "Behavior":"Database session NLS setting (default)"
+  }
+ ,"Logo":{
+    "Type":"Text"
+   ,"Text":"SISAP"
+  }
+ ,"Progressive Web App":{
+    "Enable":false
+  }
+ ,"Navigation":{
+    "Home URL":{
+      "url":"f?p=\u0026APP_ID.:1:\u0026SESSION."
+     ,"Page":"1"
+    }
+   ,"Login URL":{
+      "url":"f?p=\u0026APP_ID.:LOGIN_DESKTOP:\u0026SESSION."
+     ,"Page":"LOGIN_DESKTOP"
+    }
+  }
+ ,"Navigation Menu":{
+    "List Template":"Side Navigation Menu (52084088849057434366)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+   ,"List Position":"Side"
+   ,"List":"Menu de Navega\u00E7\u00E3o da \u00C1rea de Trabalho (52083996995632434479)"
+  }
+ ,"Navigation Bar":{
+    "Implementation":"List"
+   ,"List":"Barra de Navega\u00E7\u00E3o da \u00C1rea de Trabalho (52084117040960434324)"
+   ,"List Template":"Navigation Bar (52084088616390434366)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"JavaScript":{
+    "Include jQuery Migrate":false
+  }
+ ,"CSS":{
+    "File URLs":[
+      "#APP_IMAGES#app-icon.css?version=#APP_VERSION#"
+    ]
+  }
+ ,"Attributes":{
+    "Theme":"Universal Theme (42)"
+   ,"Global Page":"0"
+   ,"Enable End Users to choose Theme Style":false
+   ,"Add \"Built with APEX\" to Footer":false
+  }
+ ,"Substitutions":[
+    {
+      "id":"1"
+     ,"Identification":{
+        "Name":"APP_NAME"
+      }
+     ,"Value":{
+        "Static Value":"SISAP"
+      }
+    }
+  ]
+}

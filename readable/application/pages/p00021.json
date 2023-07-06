@@ -1,0 +1,201 @@
+{
+  "id":"21"
+ ,"Identification":{
+    "Name":"Gr\u00E1fico Tema"
+   ,"Title":"Gr\u00E1fico Tema"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Modal Dialog (52084009659356434452)"
+   ,"Template Options":[
+      "#DEFAULT#"
+     ,"ui-dialog--stretch"
+    ]
+  }
+ ,"Dialog":{
+    "Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"44716785554146865937"
+     ,"Identification":{
+        "Title":"Gr\u00E1fico Tema"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--removeHeader"
+         ,"t-Region--scrollBody"
+         ,"t-Form--labelsAbove"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44716785943324865936"
+       ,"Chart":{
+          "Type":"Bar"
+        }
+       ,"Appearance":{
+          "Orientation":"Vertical"
+         ,"Stack":true
+         ,"Stack Label":false
+        }
+       ,"Layout":{
+          "Height":400
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":true
+        }
+       ,"Multi-Series Chart Data":{
+          "Fill Gaps in Chart Data":true
+         ,"Sort Order":"Label - Ascending"
+         ,"Render Gap as Zero":true
+        }
+       ,"Settings":{
+          "Zoom and Scroll":"No"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Group Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":false
+        }
+       ,"Series":[
+          {
+            "id":"44716787590454865933"
+           ,"Identification":{
+              "Name":"Tema"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"SELECT TE.TEMA LABEL, COUNT(ST.TEMA) AS \"Contagem de Processo\"\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV\nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nWHERE ST.TEMA IS NOT NULL\nGROUP BY TE.TEMA\nORDER BY TE.TEMA ASC\n\n"
+            }
+           ,"Column Mapping":{
+              "Label":"LABEL"
+             ,"Value":"Contagem de Processo"
+             ,"Label Tooltip":"LABEL"
+            }
+           ,"Appearance":{
+              "Assigned To Y2 Axis":false
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Automatic"
+            }
+          }
+        ]
+       ,"Axes":[
+          {
+            "id":"44716786395796865935"
+           ,"Identification":{
+              "Name":"x"
+             ,"Show Axis":true
+            }
+           ,"Value":{
+              "Format Scaling":"Automatic"
+             ,"Baseline Scaling":"Zero"
+             ,"Scale":"Linear"
+            }
+           ,"Major Ticks":{
+              "Show":"Automatic"
+            }
+           ,"Minor Ticks":{
+            }
+           ,"Tick Label":{
+              "Show":true
+             ,"Rotation":true
+             ,"Position":"Inside"
+            }
+          }
+         ,{
+            "id":"44716787063003865934"
+           ,"Identification":{
+              "Name":"y"
+             ,"Show Axis":true
+            }
+           ,"Value":{
+              "Format":"Decimal"
+             ,"Decimal Places":0
+             ,"Format Scaling":"Automatic"
+             ,"Baseline Scaling":"Zero"
+             ,"Scale":"Linear"
+            }
+           ,"Appearance":{
+              "Position":"Bottom"
+            }
+           ,"Major Ticks":{
+              "Show":"Automatic"
+            }
+           ,"Minor Ticks":{
+            }
+           ,"Tick Label":{
+              "Show":true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

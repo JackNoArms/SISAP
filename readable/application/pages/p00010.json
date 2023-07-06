@@ -1,0 +1,1249 @@
+{
+  "id":"10"
+ ,"Identification":{
+    "Name":"Editar Processos Acervos"
+   ,"Title":"Editar Processos Acervos"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"JavaScript":{
+    "Function and Global Variable Declaration":"var htmldb_delete_message=\u0027\"DELETE_CONFIRM_MSG\"\u0027;"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"45301571369140445947"
+     ,"Identification":{
+        "Title":"Editar Processos Acervos"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (52084043141939434416)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--removeHeader"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"Text (escape special characters)"
+         ,"Show Line Breaks":true
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"45301446408317023819"
+     ,"Identification":{
+        "Name":"P10_ACERVO_ATUAL"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Acervo Atual"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (52084094610832434361)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT NOME_ACERVO\nFROM SISAP_ACERVOS\nWHERE :P10_COD_ACERVO = COD"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301446572733023820"
+     ,"Identification":{
+        "Name":"P10_ANO"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Ano"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT PG.ANO\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV \nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nLEFT JOIN ORGAO_ENTIDADE OE \nON ST.ORGAO_ENTIDADE = OE.COD\nLEFT JOIN SISAP_ACERVOS SSA\nON SSA.COD = ST.COD_ACERVO\nwhere :p10_processo = st.processo and :p10_cod_acervo = st.cod_acervo"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301446601311023821"
+     ,"Identification":{
+        "Name":"P10_TIPO"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Tipo"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT TP.DESCR TIPO\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV \nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nLEFT JOIN ORGAO_ENTIDADE OE \nON ST.ORGAO_ENTIDADE = OE.COD\nLEFT JOIN SISAP_ACERVOS SSA\nON SSA.COD = ST.COD_ACERVO\nwhere :p10_processo = st.processo and :p10_cod_acervo = st.cod_acervo"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301446778135023822"
+     ,"Identification":{
+        "Name":"P10_RELATOR"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Relator"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT MN.NOME_REDUZIDO RELATOR\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV \nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nLEFT JOIN ORGAO_ENTIDADE OE \nON ST.ORGAO_ENTIDADE = OE.COD\nLEFT JOIN SISAP_ACERVOS SSA\nON SSA.COD = ST.COD_ACERVO\nwhere :p10_processo = st.processo and :p10_cod_acervo = st.cod_acervo"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301446815193023823"
+     ,"Identification":{
+        "Name":"P10_UT"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Ut"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":80
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT UT.SIGLA UT\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV \nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nLEFT JOIN ORGAO_ENTIDADE OE \nON ST.ORGAO_ENTIDADE = OE.COD\nLEFT JOIN SISAP_ACERVOS SSA\nON SSA.COD = ST.COD_ACERVO\nwhere :p10_processo = st.processo and :p10_cod_acervo = st.cod_acervo"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301446925399023824"
+     ,"Identification":{
+        "Name":"P10_ESTADO"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Estado"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":90
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"SQL Query (return single value)"
+       ,"SQL Query":"SELECT EP.DESCR ESTADO\nFROM TCU.VW_APEX_PROCESSO_GESTAO PG\nLEFT JOIN TCU.VW_APEX_SITUACAO_PROCESSO SP\nON PG.COD_SITUACAO_ATUAL = SP.COD\nLEFT JOIN TCU.VW_APEX_LOTE LT\nON PG.COD = LT.COD\nLEFT JOIN TCU.VW_APEX_MINISTRO MN\nON LT.COD_MINIS_RELATORIA_LOTE_ATUAL = MN.COD\nLEFT JOIN TCU.VW_APEX_ESTADO_PAPEL EP\nON LT.COD_ESTADO = EP.COD\nLEFT JOIN TCU.VW_APEX_UNID_ORGANIZAC_TCU UT\nON PG.COD_UNID_RESPONSAVEL_TECNICA = UT.COD\nLEFT JOIN TCU.VW_APEX_HIST_TIPO_LOTE HTP \nON PG.COD = HTP.COD_LOTE\nLEFT JOIN TCU.VW_APEX_TIPO_PROCESSO TP \nON HTP.COD_TIPO_PROCESSO = TP.COD\nRIGHT JOIN VW_SISAP_TEMP ST\nON ST.NUM_PROCESSO = PG.NUM AND ST.ANO = PG.ANO  AND ST.NUM_DV = PG.NUM_DV \nLEFT JOIN SISAP_TEMA TE\nON ST.TEMA = TE.COD\nLEFT JOIN SISAP_MACROTEMA MTE\nON ST.MACROTEMA = MTE.COD\nLEFT JOIN ORGAO_ENTIDADE OE \nON ST.ORGAO_ENTIDADE = OE.COD\nLEFT JOIN SISAP_ACERVOS SSA\nON SSA.COD = ST.COD_ACERVO\nwhere :p10_processo = st.processo and :p10_cod_acervo = st.cod_acervo"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301573675374445934"
+     ,"Identification":{
+        "Name":"P10_PROCESSO"
+       ,"Type":"Display Only"
+      }
+     ,"Label":{
+        "Label":"Processo"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Format":"Plain Text"
+       ,"Based On":"Item Value"
+       ,"Show Line Breaks":true
+       ,"Send On Page Submit":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"PROCESSO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Checksum Required - Session Level"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301574048408445931"
+     ,"Identification":{
+        "Name":"P10_COD_ACERVO"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"COD_ACERVO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Checksum Required - Session Level"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301574389077445928"
+     ,"Identification":{
+        "Name":"P10_JURISDICIONADO"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Jurisdicionado"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":100
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"JURISDICIONADO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301574851666445927"
+     ,"Identification":{
+        "Name":"P10_LOCAL_FISCALIZADO"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Local Fiscalizado"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":110
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"LOCAL_FISCALIZADO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301575271667445926"
+     ,"Identification":{
+        "Name":"P10_MACROTEMA"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Macrotema"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":120
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"SELECT MACROTEMA R, COD V\nFROM SISAP_MACROTEMA"
+       ,"Display Extra Values":true
+       ,"Display Null Value":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"MACROTEMA"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301575594551445926"
+     ,"Identification":{
+        "Name":"P10_TEMA"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Tema"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":130
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"SELECT TEMA R, COD V\nFROM SISAP_TEMA\nORDER BY TEMA ASC"
+       ,"Display Extra Values":true
+       ,"Display Null Value":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"TEMA"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301576041215445925"
+     ,"Identification":{
+        "Name":"P10_PROBLEMA"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Problema"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":140
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"PROBLEMA"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301576461663445924"
+     ,"Identification":{
+        "Name":"P10_SUBTEMA"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Subtema"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":150
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"SUBTEMA"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301576804314445923"
+     ,"Identification":{
+        "Name":"P10_DETALHAMENTO"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Detalhamento"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":160
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"DETALHAMENTO"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301577665379445922"
+     ,"Identification":{
+        "Name":"P10_OBSERVACOES"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Observacoes"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":180
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (52084094884848434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"OBSERVACOES"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"45301578076271445921"
+     ,"Identification":{
+        "Name":"P10_ORGAO_ENTIDADE"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Orgao Entidade"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (52084095266000434358)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"SELECT ORGAO_ENTIDADE R, COD V\nFROM ORGAO_ENTIDADE\nORDER BY ORGAO_ENTIDADE ASC"
+       ,"Display Extra Values":true
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Database Column"
+       ,"Database Column":"ORGAO_ENTIDADE"
+       ,"Used":"Always, replacing any existing value in session state"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"45301571694249445946"
+     ,"Identification":{
+        "Button Name":"CREATE"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"CREATE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL INSERT action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NULL"
+       ,"Item":"P10_PROCESSO"
+      }
+    }
+   ,{
+      "id":"45301571802982445946"
+     ,"Identification":{
+        "Button Name":"SAVE"
+       ,"Label":"Salvar"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"CHANGE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL UPDATE action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P10_PROCESSO"
+      }
+    }
+   ,{
+      "id":"45301571910733445946"
+     ,"Identification":{
+        "Button Name":"DELETE"
+       ,"Label":"Excluir"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"DELETE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to URL"
+       ,"Target":"javascript:apex.confirm(htmldb_delete_message,\u0027DELETE\u0027);"
+       ,"Execute Validations":false
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL DELETE action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P10_PROCESSO"
+      }
+    }
+   ,{
+      "id":"45301572054403445946"
+     ,"Identification":{
+        "Button Name":"CANCEL"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Editar Processos Acervos (45301571369140445947)"
+       ,"Position":"CLOSE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (52084095456161434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9:\u0026SESSION.::\u0026DEBUG.:::"
+         ,"Page":"9"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"45301582182686445916"
+     ,"Identification":{
+        "Name":"Fetch Row from SISAP_CARGA_TEMP"
+       ,"Type":"Automatic Row Fetch [Legacy]"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Table Owner":"PARSING SCHEMA"
+       ,"Table Name":"SISAP_CARGA_TEMP"
+       ,"Primary Key Column ":"PROCESSO"
+       ,"Primary Key Item":"P10_PROCESSO"
+       ,"Secondary Key Column":"COD_ACERVO"
+       ,"Secondary Key Item":"P10_COD_ACERVO"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Header"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+    }
+   ,{
+      "id":"45301582501746445915"
+     ,"Identification":{
+        "Name":"Process Row of SISAP_CARGA_TEMP"
+       ,"Type":"Automatic Row Processing (DML) [Legacy]"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Table Owner":"PARSING SCHEMA"
+       ,"Table Name":"SISAP_CARGA_TEMP"
+       ,"Primary Key Column ":"PROCESSO"
+       ,"Primary Key Item":"P10_PROCESSO"
+       ,"Secondary Key Column":"COD_ACERVO"
+       ,"Secondary Key Item":"P10_COD_ACERVO"
+       ,"Lock Row":true
+       ,"Supported Operations":"I:U:D"
+      }
+     ,"Execution":{
+        "Sequence":30
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"A\u00E7\u00E3o Processada."
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"45301582954973445915"
+     ,"Identification":{
+        "Name":"reset page"
+       ,"Type":"Clear Session State"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Type":"Clear all Items on the Current Page"
+      }
+     ,"Execution":{
+        "Sequence":40
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"DELETE (45301571910733445946)"
+      }
+    }
+  ]
+}

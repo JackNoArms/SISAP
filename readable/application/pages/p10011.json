@@ -1,0 +1,955 @@
+{
+  "id":"10011"
+ ,"Identification":{
+    "Name":"Principais Usu\u00E1rios"
+   ,"Title":"Principais Usu\u00E1rios"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+     ,"ui-dialog--stretch"
+     ,"t-Dialog--noPadding"
+    ]
+  }
+ ,"Dialog":{
+    "Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":"\/* Remove padding around dialog page *\/\n.hour-graph { display: table; width: 100%; }\nspan.hour { display: table-cell; padding: 0; font-size: 11px; text-align: center; background-color: #a6ffa6; min-width: 32px; }\nspan.hour.is-over1k { background-color: #7bdc7b; }\nspan.hour.is-null { background-color: #E0E0E0; }\nspan.hour-label { opacity: 0.5; }\nspan.hour-value { display: block; }"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Unrestricted"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Help":{
+    "Help Text":"\u003Cp\u003EUse este relat\u00F3rio e gr\u00E1fico para ver os usu\u00E1rios com mais visualiza\u00E7\u00F5es de p\u00E1gina no per\u00EDodo especificado.\u003C\/p\u003E\n\u003Cp\u003ESelecione o per\u00EDodo do relat\u00F3rio (Padr\u00E3o = 1 dia) e escolha entre os \u00EDcones de relat\u00F3rio e de gr\u00E1fico na parte superior da p\u00E1gina.\u003C\/p\u003E\n\u003Cp\u003EPara o relat\u00F3rio interativo, use o campo de pesquisa ou selecione o cabe\u00E7alho da coluna \u003Cstrong\u003EUsu\u00E1rio\u003C\/strong\u003E, para selecionar um usu\u00E1rio espec\u00EDfico. \u00C9 poss\u00EDvel executar v\u00E1rias fun\u00E7\u00F5es, clicando no bot\u00E3o \u003Cstrong\u003EA\u00E7\u00F5es\u003C\/strong\u003E, tais como colunas exibidas\/ocultas, linhas por p\u00E1gina e assim por diante. Clique no bot\u00E3o \u003Cstrong\u003ERedefinir\u003C\/strong\u003E para redefinir o relat\u00F3rio interativo de volta \u00E0s defini\u00E7\u00F5es padr\u00E3o.\u003C\/p\u003E"
+  }
+ ,"Configuration":{
+    "Build Option":"Recurso: Relat\u00F3rio de Atividades (44719064070653283732)"
+  }
+ ,"Regions":[
+    {
+      "id":"44719107886481283678"
+     ,"Identification":{
+        "Title":"Principais Usu\u00E1rios"
+       ,"Type":"Interactive Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select the_user,\n    \u0027\u003Cdiv class=\"hour-graph\"\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h00 = 0 then \u0027 is-null\u0027 when h00 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 0\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h00 \u003E 999 then to_char((h00\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h00) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h01 = 0 then \u0027 is-null\u0027 when h01 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 1\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h01 \u003E 999 then to_char((h01\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h01) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h02 = 0 then \u0027 is-null\u0027 when h02 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 2\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h02 \u003E 999 then to_char((h02\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h02) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h03 = 0 then \u0027 is-null\u0027 when h03 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 3\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h03 \u003E 999 then to_char((h03\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h03) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h04 = 0 then \u0027 is-null\u0027 when h04 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 4\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h04 \u003E 999 then to_char((h04\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h04) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h05 = 0 then \u0027 is-null\u0027 when h05 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 5\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h05 \u003E 999 then to_char((h05\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h05) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h06 = 0 then \u0027 is-null\u0027 when h06 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 6\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h06 \u003E 999 then to_char((h06\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h06) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h07 = 0 then \u0027 is-null\u0027 when h07 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 7\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h07 \u003E 999 then to_char((h07\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h07) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h08 = 0 then \u0027 is-null\u0027 when h08 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 8\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h08 \u003E 999 then to_char((h08\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h08) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h09 = 0 then \u0027 is-null\u0027 when h09 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E 9\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h09 \u003E 999 then to_char((h09\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h09) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h10 = 0 then \u0027 is-null\u0027 when h10 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E10\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h10 \u003E 999 then to_char((h10\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h10) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h11 = 0 then \u0027 is-null\u0027 when h11 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E11\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h11 \u003E 999 then to_char((h11\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h11) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h12 = 0 then \u0027 is-null\u0027 when h12 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E12\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h12 \u003E 999 then to_char((h12\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h12) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h13 = 0 then \u0027 is-null\u0027 when h13 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E13\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h13 \u003E 999 then to_char((h13\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h13) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h14 = 0 then \u0027 is-null\u0027 when h14 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E14\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h14 \u003E 999 then to_char((h14\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h14) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h15 = 0 then \u0027 is-null\u0027 when h15 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E15\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h15 \u003E 999 then to_char((h15\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h15) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h16 = 0 then \u0027 is-null\u0027 when h16 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E16\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h16 \u003E 999 then to_char((h16\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h16) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h17 = 0 then \u0027 is-null\u0027 when h17 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E17\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h17 \u003E 999 then to_char((h17\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h17) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h18 = 0 then \u0027 is-null\u0027 when h18 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E18\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h18 \u003E 999 then to_char((h18\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h18) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h19 = 0 then \u0027 is-null\u0027 when h19 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E19\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h19 \u003E 999 then to_char((h19\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h19) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h20 = 0 then \u0027 is-null\u0027 when h20 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E20\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h20 \u003E 999 then to_char((h20\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h20) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h21 = 0 then \u0027 is-null\u0027 when h21 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E21\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h21 \u003E 999 then to_char((h21\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h21) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h22 = 0 then \u0027 is-null\u0027 when h22 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E22\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h22 \u003E 999 then to_char((h22\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h22) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003Cspan class=\"hour\u0027|| case when h23 = 0 then \u0027 is-null\u0027 when h23 \u003E 999 then \u0027 is-over1k\u0027 end ||\u0027\"\u003E\u003Cspan class=\"hour-label\"\u003E23\u003C\/span\u003E \u003Cspan class=\"hour-value\"\u003E\u0027|| \n        case when h23 \u003E 999 then to_char((h23\/1000),\u002799999999D0\u0027) ||\u0027k\u0027 else to_char(h23) end ||\u0027\u003C\/span\u003E\u003C\/span\u003E\u0027||\n        \u0027\u003C\/div\u003E\u0027 hours,\n        page_events,\n    median_elapsed,\n    rows_fetched,\n    ir_searches,\n    errors,\n    most_recent\n    from (  \n    select lower(userid)                as the_user,\n        count(*)                        as page_events,\n        median(elap)                    as median_elapsed,\n        sum(num_rows)                   as rows_fetched,\n        sum(decode(ir_search,null,0,1)) as ir_searches,\n        sum(decode(sqlerrm,null,0,1))   as errors,\n        max(time_stamp)                 as most_recent,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),0,1,0)) h00,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),1,1,0)) h01,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),2,1,0)) h02,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),3,1,0)) h03,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),4,1,0)) h04,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),5,1,0)) h05,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),6,1,0)) h06,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),7,1,0)) h07,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),8,1,0)) h08,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),9,1,0)) h09,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),10,1,0)) h10,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),11,1,0)) h11,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),12,1,0)) h12,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),13,1,0)) h13,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),14,1,0)) h14,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),15,1,0)) h15,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),16,1,0)) h16,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),17,1,0)) h17,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),18,1,0)) h18,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),19,1,0)) h19,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),20,1,0)) h20,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),21,1,0)) h21,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),22,1,0)) h22,\n        sum(decode(to_char(time_stamp,\u0027HH24\u0027),23,1,0)) h23\n    from apex_activity_log l\n    where flow_id = :APP_ID\n        and time_stamp \u003E= sysdate - ( 1\/24\/60\/60 * :P10011_TIMEFRAME )\n        and userid is not null\n    group by lower(userid)) x"
+       ,"Page Items to Submit":[
+          "P10011_TIMEFRAME"
+        ]
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (52084042044377434417)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-IRR-region--noBorders"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Item = Value"
+       ,"Item":"P10011_VIEW_AS"
+       ,"Value":"REPORT"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44719109325469283677"
+       ,"Link":{
+          "Link Column":"Exclude Link Column"
+        }
+       ,"Appearance":{
+          "Show Null Values as":"-"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+         ,"Maximum Rows to Process":1000000
+        }
+       ,"Messages":{
+          "When No Data Found":"Dados n\u00E3o encontrados."
+         ,"When More Data Found":"A contagem m\u00E1xima de linhas deste relat\u00F3rio \u00E9 #MAX_ROW_COUNT# linhas. Aplique um filtro para reduzir o n\u00FAmero de registros em sua consulta."
+        }
+       ,"Search Bar":{
+          "Include Search Bar":true
+         ,"Search Field":true
+         ,"Finder Drop Down":true
+         ,"Reports Select List":true
+         ,"Rows Per Page Selector":false
+        }
+       ,"Actions Menu":{
+          "Include Actions Menu":true
+         ,"Filter":true
+         ,"Select Columns":true
+         ,"Rows Per Page":true
+         ,"Sort":true
+         ,"Control Break":true
+         ,"Highlight":true
+         ,"Compute":true
+         ,"Aggregate":true
+         ,"Chart":true
+         ,"Group By":true
+         ,"Pivot":true
+         ,"Flashback":true
+         ,"Save Report":true
+         ,"Save Public Report":false
+         ,"Reset":true
+         ,"Help":true
+         ,"Download":true
+         ,"Subscription":false
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"44719112906746283666"
+           ,"Identification":{
+              "Name":"Primary Report"
+             ,"Alias":"74865198"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"44719109417129283676"
+           ,"Identification":{
+              "Column Name":"THE_USER"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Usu\u00E1rio"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":10
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"44719109887163283675"
+           ,"Identification":{
+              "Column Name":"HOURS"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Atividade por hora"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":20
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":false
+            }
+          }
+         ,{
+            "id":"44719110226225283673"
+           ,"Identification":{
+              "Column Name":"PAGE_EVENTS"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Eventos de P\u00E1gina"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":30
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Appearance":{
+              "Format Mask":"999G999G999G999G999G990"
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"44719110680678283672"
+           ,"Identification":{
+              "Column Name":"MEDIAN_ELAPSED"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Mediano Decorrido"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":40
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Appearance":{
+              "Format Mask":"999G999G999G999G999G990D0000"
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"44719111029937283671"
+           ,"Identification":{
+              "Column Name":"ROWS_FETCHED"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Linhas Extra\u00EDdas"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":50
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Appearance":{
+              "Format Mask":"999G999G999G999G999G990"
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"44719111457849283670"
+           ,"Identification":{
+              "Column Name":"IR_SEARCHES"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Pesquisas IR"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":60
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Appearance":{
+              "Format Mask":"999G999G999G999G999G999G990"
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"44719111809379283669"
+           ,"Identification":{
+              "Column Name":"ERRORS"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Erros"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":70
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Appearance":{
+              "Format Mask":"999G999G999G999G999G999G990"
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"44719112247933283668"
+           ,"Identification":{
+              "Column Name":"MOST_RECENT"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Most_Recent"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":80
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Appearance":{
+              "Format Mask":"SINCE"
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+             ,"Date Ranges":"All"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+        ]
+       ,"Printing":{
+          "Output":{
+            "View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"Letter"
+           ,"Orientation":"Landscape"
+           ,"Units":"Inches"
+           ,"Width":11
+           ,"Height":8.5
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+    }
+   ,{
+      "id":"44719107956691283678"
+     ,"Identification":{
+        "Title":"Barra de Bot\u00F5es"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Buttons Container (52084022617461434435)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-ButtonRegion--slimPadding"
+         ,"t-ButtonRegion--noUI"
+         ,"t-Form--large"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"44719108130460283678"
+     ,"Identification":{
+        "Title":"Gr\u00E1fico de Principais Usu\u00E1rios"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (52084021589175434436)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--hideHeader"
+         ,"t-Region--hiddenOverflow"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Item = Value"
+       ,"Item":"P10011_VIEW_AS"
+       ,"Value":"CHART"
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"44719108287575283678"
+       ,"Chart":{
+          "Type":"Donut"
+        }
+       ,"Layout":{
+          "Height":600
+        }
+       ,"Data Cursor":{
+          "Cursor":"Automatic"
+         ,"Behavior":"Automatic"
+         ,"Dim On Hover":true
+        }
+       ,"Settings":{
+          "Pie Selection Effect":"Highlight"
+        }
+       ,"Value":{
+          "Pie Chart Other Threshold":0.02
+         ,"Format":"Decimal"
+         ,"Decimal Places":0
+         ,"Format Scaling":"Automatic"
+        }
+       ,"Animation":{
+          "On Display":"None"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":false
+        }
+       ,"Advanced":{
+          "Initialization JavaScript Function":"function( options ){ \n\n    this.pieSliceLabel = function(dataContext) {\n        var series_name,\n            percent = Math.round(dataContext.value\/dataContext.totalValue*100);\n        \n        if ( dataContext.seriesData ) {\n            series_name = dataContext.seriesData.name;\n        } else {\n            series_name = \u0027Other\u0027;\n        }\n        return series_name + \" \" + percent + \"% ( \" + dataContext.value + \" )\";\n    }\n    \n    \/\/ Set chart initialization options \n    options.dataLabel = pieSliceLabel; \n    return options; \n}"
+        }
+       ,"Series":[
+          {
+            "id":"44719116555468283662"
+           ,"Identification":{
+              "Name":"Top Users"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"select lower(userid) as userid,\n    count(*) as page_views\nfrom apex_activity_log\nwhere flow_id = :app_id\n    and time_stamp \u003E= sysdate - ( 1\/24\/60\/60 * :P10011_TIMEFRAME )\n    and userid is not null\ngroup by lower(userid)\norder by 2"
+             ,"Page Items to Submit":[
+                "P10011_TIMEFRAME"
+              ]
+            }
+           ,"Column Mapping":{
+              "Label":"USERID"
+             ,"Value":"PAGE_VIEWS"
+            }
+           ,"Label":{
+              "Show":true
+             ,"Position":"Outside Slice"
+             ,"Display As":"Label"
+            }
+          }
+        ]
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"44719108313826283678"
+     ,"Identification":{
+        "Name":"P10011_VIEW_AS"
+       ,"Type":"Radio Group"
+      }
+     ,"Label":{
+        "Label":"Exibir Como"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Number of Columns":2
+       ,"Page Action on Selection":"Submit Page"
+       ,"Execute Validations":true
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Barra de Bot\u00F5es (44719107956691283678)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (52084094610832434361)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--radioButtonGroup"
+        ]
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"List of Values":{
+        "Type":"Shared Component"
+       ,"List of Values":"VIEW_AS_REPORT_CHART (44719117008676283662)"
+       ,"Display Extra Values":false
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Static Value"
+       ,"Static Value":"REPORT"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"REPORT"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Escape special characters":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"44719108562028283678"
+     ,"Identification":{
+        "Name":"P10011_TIMEFRAME"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Prazo"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Barra de Bot\u00F5es (44719107956691283678)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional (52084094711102434359)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"List of Values":{
+        "Type":"Shared Component"
+       ,"List of Values":"TIMEFRAME (4 WEEKS) (44719081535243283708)"
+       ,"Display Extra Values":false
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Static Value"
+       ,"Static Value":"900"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"900"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"44719113880622283664"
+     ,"Identification":{
+        "Button Name":"RESET_REPORT"
+       ,"Label":"Redefinir"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Principais Usu\u00E1rios (44719107886481283678)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (52084095505941434356)"
+       ,"Hot":false
+       ,"Template Options":[
+          "t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-undo-alt"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:\u0026APP_PAGE_ID.:\u0026SESSION.::\u0026DEBUG.:\u0026APP_PAGE_ID.,RIR::"
+         ,"Page":"\u0026APP_PAGE_ID."
+         ,"Clear Cache":"\u0026APP_PAGE_ID.,RIR"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"44719107995782283678"
+     ,"Identification":{
+        "Name":"Atualizar Relat\u00F3rio"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CHANGE"
+       ,"Selection Type":"Item(s)"
+       ,"Item(s)":[
+          "P10011_TIMEFRAME"
+        ]
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"44719115142695283663"
+         ,"Identification":{
+            "Action":"Refresh"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Region"
+           ,"Region":"Principais Usu\u00E1rios (44719107886481283678)"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Atualizar Relat\u00F3rio (44719107995782283678)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+       ,{
+          "id":"44719118408739283657"
+         ,"Identification":{
+            "Action":"Refresh"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Region"
+           ,"Region":"Principais Usu\u00E1rios (44719107886481283678)"
+          }
+         ,"Execution":{
+            "Sequence":30
+           ,"Event":"Atualizar Relat\u00F3rio (44719107995782283678)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+}

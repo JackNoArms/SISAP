@@ -1,0 +1,30 @@
+[
+  {
+    "id":"44693138971106501166"
+   ,"Identification":{
+      "Name":"Recurso: Op\u00E7\u00F5es de Configura\u00E7\u00E3o"
+    }
+   ,"Status":{
+      "Status":"Include"
+     ,"Default on Export":"Same as Current Status"
+     ,"On Upgrade Keep Status":false
+    }
+   ,"Comments":{
+      "Comments":"Permitir que os administradores de aplicativos ativem ou desativem funcionalidades espec\u00EDficas, associadas a uma op\u00E7\u00E3o de build do Application Express, de dentro do aplicativo."
+    }
+  }
+ ,{
+    "id":"44719064070653283732"
+   ,"Identification":{
+      "Name":"Recurso: Relat\u00F3rio de Atividades"
+    }
+   ,"Status":{
+      "Status":"Include"
+     ,"Default on Export":"Same as Current Status"
+     ,"On Upgrade Keep Status":false
+    }
+   ,"Comments":{
+      "Comments":"Inclua diversos relat\u00F3rios e gr\u00E1ficos sobre a atividade do usu\u00E1rio final."
+    }
+  }
+]
