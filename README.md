@@ -14,10 +14,10 @@ Você pode acessar o sistema por meio do seguinte link: [https://apex.oracle.com
 - Controle de informações: Facilita o acompanhamento e controle das atualizações e andamentos dos processos cadastrados.
 - Visibilidade ampliada: Proporciona uma visão mais completa da situação de uma unidade jurisdicionada diante da atuação do Tribunal, fornecendo informações adicionais para embasar as decisões.
 
-## Tela principal
+## Tela principal do usuário
 ![image](https://github.com/JackNoArms/SISAP/assets/110069089/86b1c243-c21b-4feb-b877-af4cce9e87b6)
 
-## Tela de administrador
+## Tela do administrador
 ![image](https://github.com/JackNoArms/SISAP/assets/110069089/0e18e382-0804-4477-aa47-35c66a2a8ef0)
 
 
