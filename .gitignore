@@ -1,0 +1,9 @@
+.cache/
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+coverage/
+.env
+.env.*
+!.env.example
