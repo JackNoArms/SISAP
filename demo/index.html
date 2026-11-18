@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SISAP — prévia interativa de controle de acervos e processos, com dados fictícios.">
+  <meta name="theme-color" content="#0f263a">
+  <title>SISAP | Acervo de processos</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#inicio" aria-label="SISAP — Início">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SISAP <small>GESTÃO DE ACERVOS</small></span>
+      </a>
+      <p class="side-heading">ESPAÇO DE TRABALHO</p>
+      <nav aria-label="Navegação do painel" class="side-links">
+        <a href="#inicio" class="active"><span aria-hidden="true">▦</span> Visão geral</a>
+        <a href="#processos"><span aria-hidden="true">☷</span> Processos</a>
+        <a href="#acervos"><span aria-hidden="true">▤</span> Acervos</a>
+        <a href="#sobre"><span aria-hidden="true">ⓘ</span> Sobre o sistema</a>
+      </nav>
+      <div class="side-bottom">
+        <span class="demo-mark"><span aria-hidden="true">●</span> AMBIENTE DEMONSTRATIVO</span>
+        <p>Prévia independente<br>Sem conexão com bases reais</p>
+      </div>
+    </aside>
+
+    <main id="conteudo" class="main">
+      <header class="topbar">
+        <div><span class="crumb">SISAP</span><span class="crumb-sep">/</span><strong>Painel de controle</strong></div>
+        <span class="user-pill"><span aria-hidden="true">◌</span> Usuário demonstrativo</span>
+      </header>
+
+      <section class="hero" id="inicio">
+        <div class="eyebrow">CONTROLE DE ACERVOS E PROCESSOS</div>
+        <div class="hero-heading">
+          <div><h1>Visão geral dos processos</h1>
+          <p>Centralize consultas, acompanhe situações e explore acervos em uma única visão.</p></div>
+          <span class="period">BASE FICTÍCIA · 2024—2026</span>
+        </div>
+        <div class="warning" role="note">
+          <span aria-hidden="true">ⓘ</span>
+          <div><strong>Demonstração de interface</strong><p>Todos os processos, unidades, situações e indicadores desta página são fictícios. Esta prévia não consulta o ambiente Oracle APEX.</p></div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Indicadores da amostra fictícia">
+        <article class="metric"><div class="metric-label"><span>PROCESSOS NO ACERVO</span><span aria-hidden="true">▦</span></div><strong id="metric-total">—</strong><p>Registros no recorte atual</p></article>
+        <article class="metric"><div class="metric-label"><span>EM ANÁLISE</span><span aria-hidden="true">◷</span></div><strong id="metric-analysis">—</strong><p>Processos em análise</p></article>
+        <article class="metric"><div class="metric-label"><span>EM ACOMPANHAMENTO</span><span aria-hidden="true">↗</span></div><strong id="metric-progress">—</strong><p>Processos acompanhados</p></article>
+        <article class="metric"><div class="metric-label"><span>CONCLUÍDOS</span><span aria-hidden="true">✓</span></div><strong id="metric-done">—</strong><p>Processos concluídos</p></article>
+      </section>
+
+      <section id="acervos" class="section analytics">
+        <div class="section-title"><div><p class="eyebrow">01 · DISTRIBUIÇÃO</p><h2>Panorama do acervo</h2><p>Explore a distribuição dos processos selecionados, por situação e ano de referência.</p></div><span class="subtag">DADOS ILUSTRATIVOS</span></div>
+        <div class="charts">
+          <article class="panel">
+            <div class="panel-heading"><h3>Situação dos processos</h3><p>Quantidade por situação</p></div>
+            <div id="status-bars" class="bar-chart" aria-label="Distribuição por situação de processo"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><h3>Distribuição por ano</h3><p>Quantidade de registros por ano</p></div>
+            <div id="year-bars" class="bar-chart" aria-label="Distribuição anual de processos"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="processos">
+        <div class="section-title"><div><p class="eyebrow">02 · CONSULTAR</p><h2>Acervo de processos</h2><p>Filtre os registros por nome, acervo, situação e ano.</p></div><button type="button" id="download" class="secondary"><span aria-hidden="true">↓</span> Exportar CSV</button></div>
+
+        <div class="filters" aria-label="Filtros dos processos">
+          <div class="filter filter-search"><label for="search">BUSCAR PROCESSO</label><input type="search" id="search" placeholder="Número, tema ou unidade..." autocomplete="off"></div>
+          <div class="filter"><label for="collection">ACERVO</label><select id="collection"><option value="">Todos os acervos</option></select></div>
+          <div class="filter"><label for="status">SITUAÇÃO</label><select id="status"><option value="">Todas as situações</option></select></div>
+          <div class="filter"><label for="year">ANO</label><select id="year"><option value="">Todos os anos</option></select></div>
+          <button id="reset" type="button" class="reset" title="Limpar todos os filtros">Limpar</button>
+        </div>
+
+        <div class="table-panel">
+          <div class="table-top"><strong id="row-count">Carregando processos…</strong><span>Selecione um registro para ver os detalhes</span></div>
+          <div class="table-scroll">
+            <table><caption class="visually-hidden">Processos fictícios disponíveis</caption>
+              <thead><tr><th scope="col">PROCESSO</th><th scope="col">ACERVO / TEMA</th><th scope="col">SITUAÇÃO</th><th scope="col">ANO</th><th scope="col">ATUALIZAÇÃO</th><th scope="col"><span class="visually-hidden">Ações</span></th></tr></thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+          <div id="empty" class="empty" hidden>Nenhum processo encontrado para estes filtros. Ajuste a pesquisa e tente novamente.</div>
+          <div class="table-bottom"><span id="table-foot">Exibindo registros demonstrativos</span><button id="clear-bottom" type="button" class="text-action">Restaurar filtros</button></div>
+        </div>
+      </section>
+
+      <section class="section story" id="sobre">
+        <p class="eyebrow">03 · SOBRE O SISTEMA</p>
+        <h2>Informações organizadas. Consultas mais claras.</h2>
+        <p>O SISAP (Sistema de Controle do Acervo de Processos da SecexAgroAmbiental) reúne funções de gerenciamento de acervos, processos, macrotemas e temas. O projeto original foi desenvolvido em Oracle APEX.</p>
+        <p>Esta interface é uma prévia independente de navegação e consulta. Não substitui a aplicação Oracle APEX e não representa dados institucionais.</p>
+      </section>
+
+      <footer><span>SISAP · Sistema de Controle do Acervo de Processos</span><span>Prévia com dados fictícios</span></footer>
+    </main>
+  </div>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="dialog-header"><div><p class="eyebrow">DETALHE DO PROCESSO</p><h2 id="detail-title">Processo</h2></div><button id="close-dialog" type="button" aria-label="Fechar detalhes" class="close">×</button></div>
+    <p id="detail-info" class="dialog-subtitle"></p>
+    <div id="detail-content" class="detail-grid"></div>
+    <div class="dialog-note"><strong>Registro demonstrativo</strong><p>Exemplo fictício criado apenas para apresentar o funcionamento da interface.</p></div>
+    <button id="close-footer" type="button" class="primary">Voltar ao acervo</button>
+  </dialog>
+</body>
+</html>
