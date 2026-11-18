@@ -1,0 +1,29 @@
+name: SISAP demo quality
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check JavaScript syntax
+        run: |
+          node --check demo/data.mjs
+          node --check demo/app.mjs
+      - name: Test demo data and filters
+        run: node --test tests/*.test.mjs
+      - name: Verify Oracle export was not changed
+        run: |
+          test -f install.sql
+          test -f application/create_application.sql
